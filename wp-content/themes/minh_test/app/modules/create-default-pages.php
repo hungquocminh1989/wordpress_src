@@ -20,7 +20,7 @@ function wp_register_theme_deactivation_hook($code, $function) {
 }
 
 function _mmen_theme_active() {
-    $default_pages = DEFAULT_PAGES;
+    $default_pages[] = DEFAULT_PAGES;
     if(isset($default_pages) && count($default_pages) > 0){
 
     	$existing_pages  = get_pages();

@@ -16,3 +16,5 @@ require_once get_template_directory() . '/app/initialize.php';
   register_nav_menu('header-menu',__( 'Header Menu111' ));
 }
 add_action( 'init', 'register_my_menu' );*/
+
+//echo site_url('/');
