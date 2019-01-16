@@ -30,7 +30,7 @@ function load_CoreAjaxDialog() {
 	    	};
 	    };
 	    
-	    SystemUpload.prototype.connect = function (action_type, ajax_url, ajax_data) {
+	    SystemUpload.prototype.connect = function (action_type, ajax_data) {
 	    	var aa_this = this;
 	    	var opt =　this.ajax_option;
 	    	System.loading(true);
@@ -86,7 +86,7 @@ function load_CoreAjaxDialog() {
 	    	System.message_error(data.responseText);
 	    };
 	    
-	    System.prototype.connect = function (action_type, ajax_url, ajax_data) {
+	    System.prototype.connect = function (action_type, ajax_data) {
 	    	var aa_this = this;
 	    	var opt =　this.ajax_option;
 	    	System.loading(true);

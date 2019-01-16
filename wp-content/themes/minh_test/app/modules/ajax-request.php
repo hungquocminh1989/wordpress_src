@@ -21,7 +21,7 @@ function load_AjaxRequest() {
 							$('#result_ajax').html(json.data);
 						});
 			    	};
-			    	ajax.connect("POST","/test",{
+			    	ajax.connect("POST",{
 			            action: "thongbao", //Tên action
 			            website : 'test.com',//Biến truyền vào xử lý. $_POST['website']
 				    });
