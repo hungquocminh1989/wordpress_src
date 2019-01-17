@@ -1,4 +1,4 @@
-			<!--...-->
+		<!--End Main-->
 		</main>
 		<?php 
 			if (has_nav_menu('bottom-menu') === TRUE){
