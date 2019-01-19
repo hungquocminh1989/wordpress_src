@@ -30,10 +30,12 @@ function load_CoreAjaxDialog() {
 	    	};
 	    };
 	    
-	    SystemUpload.prototype.connect = function (action_type, ajax_data) {
+	    SystemUpload.prototype.connect = function (action_type, ajax_data, loaderDisplay = true) {
 	    	var aa_this = this;
 	    	var opt =　this.ajax_option;
-	    	System.loading(true);
+	    	if(loaderDisplay == true){
+				System.loading(true);	
+			}
 	    	opt.type =  action_type;
 	    	opt.url = "<?php echo admin_url('admin-ajax.php');?>"; //Đường dẫn chứa hàm xử lý dữ liệu. Mặc định của WP như vậy
 	    	if (ajax_data) {
@@ -86,10 +88,12 @@ function load_CoreAjaxDialog() {
 	    	System.message_error(data.responseText);
 	    };
 	    
-	    System.prototype.connect = function (action_type, ajax_data) {
+	    System.prototype.connect = function (action_type, ajax_data, loaderDisplay = true) {
 	    	var aa_this = this;
 	    	var opt =　this.ajax_option;
-	    	System.loading(true);
+	    	if(loaderDisplay == true){
+				System.loading(true);	
+			}
 	    	opt.type =  action_type;
 	    	opt.url = "<?php echo admin_url('admin-ajax.php');?>"; //Đường dẫn chứa hàm xử lý dữ liệu. Mặc định của WP như vậy
 	    	if (ajax_data) {
