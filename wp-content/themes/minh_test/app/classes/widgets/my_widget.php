@@ -44,7 +44,10 @@ class Foo_Widget extends WP_Widget {
 		?>
 		<p>
 		<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label> 
+		
 		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+		<label for="<?php echo esc_attr( $this->get_field_id( 'title111' ) ); ?>"><?php esc_attr_e( 'Title111:', 'text_domain' ); ?></label> 
+		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title111' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title111' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<?php 
 	}
@@ -62,13 +65,10 @@ class Foo_Widget extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
 		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
+		$instance['title111'] = ( ! empty( $new_instance['title111'] ) ) ? sanitize_text_field( $new_instance['title111'] ) : '';
 
+		//Save to wp_options
 		return $instance;
 	}
 
 } // class Foo_Widget
-
-//Load widget
-add_action( 'widgets_init', function(){
-	register_widget( 'Foo_Widget' );
-});
