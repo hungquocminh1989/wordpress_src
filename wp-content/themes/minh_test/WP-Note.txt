@@ -4,7 +4,8 @@ https://codex.wordpress.org/Plugin_API/Action_Reference
 https://generatewp.com
 
 - Xác định Action Hook và Filter Hook
-
+- Custome field : Hàm thường sử dụng get_post_meta(), get_post_custome()
+- MetaBox
 - Tạo Side-Bar
 - Tạo Widget để add vào Side-Bar
 - Plugin (chưa cần thiết)
