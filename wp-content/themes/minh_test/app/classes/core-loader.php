@@ -1,7 +1,7 @@
 <?php if (!defined('ABSPATH')) die('Direct access forbidden.');
-if (!class_exists( 'init_loader')) {
+if (!class_exists( 'core_loader')) {
 	
-    class init_loader {
+    class core_loader {
     	
         public static $instance;
 
@@ -52,4 +52,4 @@ if (!class_exists( 'init_loader')) {
 
 }
 
-init_loader::instance()->initialize();
+core_loader::instance()->initialize();

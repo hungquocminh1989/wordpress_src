@@ -4,3 +4,6 @@ Author: The KOI team
 Version: 1.0
 Text Domain: mmen
 */
+#result_ajax{
+	background-color: red;
+}
