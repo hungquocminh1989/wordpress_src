@@ -1,8 +1,8 @@
 <?php
 
-add_action('wp_footer','load_CoreAjaxDialog');
+add_action('wp_footer','repo_LoadCoreAjaxDialog');
 
-function load_CoreAjaxDialog() {
+function repo_LoadCoreAjaxDialog() {
 	?>
 	<script type="text/javascript">
 		function System() {

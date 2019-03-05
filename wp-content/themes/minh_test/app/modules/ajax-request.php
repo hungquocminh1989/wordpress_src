@@ -1,4 +1,9 @@
 <?php
+/*
+|--------------------------------------------------------------------------
+| wp_ajax_thongbao
+|-------------------------------------------------------------------------- 
+*/
 add_action( 'wp_ajax_thongbao', 'thongbao_init' );//Khai báo khi sử dụng bên Admin
 add_action( 'wp_ajax_nopriv_thongbao', 'thongbao_init' );//Khai báo khi sử dụng bên Public
 function thongbao_init() {
@@ -8,8 +13,9 @@ function thongbao_init() {
     wp_send_json_success('Chào mừng bạn đến với '.$website);
     
 }
-add_action('wp_footer','load_AjaxRequest');
-function load_AjaxRequest() {
+
+add_action('wp_footer','repo_LoadAjaxRequest');
+function repo_LoadAjaxRequest() {
 	?>
 	<script type="text/javascript">
 		(function($){
