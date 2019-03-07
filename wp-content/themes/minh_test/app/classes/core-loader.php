@@ -1,4 +1,6 @@
-<?php if (!defined('ABSPATH')) die('Direct access forbidden.');
+<?php 
+if (!defined('ABSPATH')) die('Direct access forbidden.');
+
 if (!class_exists( 'core_loader')) {
 	
     class core_loader {
