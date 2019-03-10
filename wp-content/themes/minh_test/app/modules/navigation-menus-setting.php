@@ -8,3 +8,34 @@ add_action( 'after_setup_theme',  function(){
 
 });
 
+function repoCreateTopNavigation(){
+	
+	add_filter( 'nav_menu_css_class',  function($classes, $item, $args, $depth){
+		if($args->walker->has_children){
+			
+			$classes[] = 'has-submenu';
+		}
+		return $classes;
+	},1,4);
+	
+	add_filter( 'nav_menu_submenu_css_class',  function($classes, $args, $depth){
+		$classes = [];
+		$classes[] = 'submenu';
+		return $classes;
+	},1,3);
+	
+	if (has_nav_menu('top-menu') === TRUE){
+	     wp_nav_menu(array(
+	     	'theme_location' => 'top-menu',
+	     	'menu_class' => 'main',
+	     	'container' => 'nav',
+	     	'container_class' => 'menu',
+	     	'walker' => new Walker_Nav_Menu()
+	     ));  
+	}
+	
+	remove_all_filters('nav_menu_css_class');
+	remove_all_filters('nav_menu_submenu_css_class');
+	
+}
+

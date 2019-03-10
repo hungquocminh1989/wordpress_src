@@ -4,7 +4,7 @@
 | LOAD CORE CLASS
 |-------------------------------------------------------------------------- 
 */
-include_once THEME_PATH . '/app/classes/core-loader.php';
+require_once THEME_PATH . '/app/classes/core-loader.php';
 
 /*
 |--------------------------------------------------------------------------

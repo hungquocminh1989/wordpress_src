@@ -29,6 +29,10 @@ if (!class_exists( 'core_loader')) {
         	$widgets_dir = THEME_PATH . '/app/classes/widgets';
         	$arr_loader[] = $widgets_dir;
         	
+        	//Add walkers
+        	$walkers_dir = THEME_PATH . '/app/classes/walkers';
+        	$arr_loader[] = $walkers_dir;
+        	
         	//Add modules
         	$modules_dir = THEME_PATH . '/app/modules';
         	$arr_loader[] = $modules_dir;
@@ -41,7 +45,7 @@ if (!class_exists( 'core_loader')) {
 						$path = $dir . '/' . $filename;
 					    if (is_file($path)) {
 					    	$arr_logs[] = $path;
-					        include_once $path;
+					        require_once $path;
 					    }
 					}
 				}
