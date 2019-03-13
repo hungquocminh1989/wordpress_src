@@ -40,6 +40,20 @@ function repoLoadDefaultCss(){
 function repoLoadDefaultScript(){
 	
 	wp_enqueue_script( 'bootstrap.min' , THEME_URI . "/resources/assets/default/js/bootstrap/bootstrap.min.js", array('jquery'));
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/libs/jquery-ui-1.10.4.custom.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/libs/jquery.easing.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/smoothscroll.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/jquery.validate.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/icheck.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/jquery.placeholder.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/jquery.stellar.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/jquery.touchSwipe.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/jquery.shuffle.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/lightGallery.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/owl.carousel.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/plugins/masterslider.min.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/mailer/mailer.js",null,null,true);
+	wp_enqueue_script( '1' , THEME_URI . "/resources/assets/bushido_template/js/scripts.js",null,null,true);
 	//wp_enqueue_script('bootstrap-dialog' , THEME_URI . "/resources/assets/librarys/bootstrap3-dialog/js/bootstrap-dialog.js");
 	
 }

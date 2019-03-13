@@ -15,3 +15,5 @@ https://generatewp.com
 - Menu link với page
 - Tạo post_type mới
 - Tạo meta box, custome field
+
+http://themehats.com/themes/jango/
