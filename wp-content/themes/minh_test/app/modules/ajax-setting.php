@@ -1,6 +1,6 @@
 <?php
 
-add_action('wp_footer','repo_LoadCoreAjaxDialog');
+//add_action('wp_footer','repo_LoadCoreAjaxDialog');
 
 function repo_LoadCoreAjaxDialog() {
 	?>

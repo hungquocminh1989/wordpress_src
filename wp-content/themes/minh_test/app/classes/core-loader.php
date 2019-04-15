@@ -26,15 +26,15 @@ if (!class_exists( 'core_loader')) {
         	$arr_logs = [];
         	
         	//Add widgets
-        	$widgets_dir = THEME_PATH . '/app/classes/widgets';
+        	$widgets_dir = TEMPLATE_DIRECTORY . '/app/classes/widgets';
         	$arr_loader[] = $widgets_dir;
         	
         	//Add walkers
-        	$walkers_dir = THEME_PATH . '/app/classes/walkers';
+        	$walkers_dir = TEMPLATE_DIRECTORY . '/app/classes/walkers';
         	$arr_loader[] = $walkers_dir;
         	
         	//Add modules
-        	$modules_dir = THEME_PATH . '/app/modules';
+        	$modules_dir = TEMPLATE_DIRECTORY . '/app/modules';
         	$arr_loader[] = $modules_dir;
         	
         	//Load All

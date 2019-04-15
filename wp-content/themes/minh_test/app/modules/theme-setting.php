@@ -10,8 +10,9 @@ add_action( 'after_setup_theme',  function(){
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support('automatic-feed-links');
+	add_theme_support( 'woocommerce' );
 
-	load_theme_textdomain('mmen', THEME_PATH . '/resources/lang');
+	load_theme_textdomain('mmen', TEMPLATE_DIRECTORY . '/resources/lang');
 
 });
 
