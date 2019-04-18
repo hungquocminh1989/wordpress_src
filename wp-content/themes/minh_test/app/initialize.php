@@ -4,7 +4,7 @@
 | LOAD CORE CLASS
 |-------------------------------------------------------------------------- 
 */
-require_once TEMPLATE_DIRECTORY . '/app/classes/core-loader.php';
+require_once TEMPLATE_DIRECTORY . '/app/autoloader.php';
 
 /*
 |--------------------------------------------------------------------------
