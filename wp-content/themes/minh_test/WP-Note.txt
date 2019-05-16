@@ -3,6 +3,8 @@ https://www.shoutmeloud.com/15-best-wordpress-cheat-sheets-for-designers-and-dev
 https://codex.wordpress.org/Plugin_API/Action_Reference
 https://generatewp.com
 
+https://kipalog.com/posts/Cac-khai-niem-roi-ram-cua-wordpress---Cach-lam-theme-wordpress-co-ban
+
 - Xác định Action Hook và Filter Hook
 - Custome field : Hàm thường sử dụng get_post_meta(), get_post_custome()
 - MetaBox
