@@ -1,0 +1,25 @@
+﻿https://startbloggingonline.com/wordpress-cheat-sheet/
+https://www.shoutmeloud.com/15-best-wordpress-cheat-sheets-for-designers-and-developers.html
+https://codex.wordpress.org/Plugin_API/Action_Reference
+https://generatewp.com
+
+https://kipalog.com/posts/Cac-khai-niem-roi-ram-cua-wordpress---Cach-lam-theme-wordpress-co-ban
+https://hamrongmedia.com/chuc-nang-customize-cho-wordpress/
+
+- Xác định Action Hook và Filter Hook
+- Custome field : Hàm thường sử dụng get_post_meta(), get_post_custome()
+- MetaBox
+- Tạo Side-Bar
+- Tạo Widget để add vào Side-Bar
+- Plugin (chưa cần thiết)
+
+
+- Xây dựng menu nhiều cấp
+- Menu link với page
+- Tạo post_type mới
+- Tạo meta box, custome field
+
+http://themehats.com/themes/jango/
+
+Plugin:
+Post Type Order : Sắp xếp thứ tự của các post
