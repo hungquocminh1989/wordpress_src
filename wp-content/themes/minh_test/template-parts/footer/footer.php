@@ -1,57 +1,25 @@
-<!--Footer-->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5">
-                <div class="info">
-                    <a class="logo" href="index.html"><img src="img/logo.png" alt="Bushido"/></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                    <div class="social">
-                        <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-youtube-square"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-tumblr-square"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-vimeo-square"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-pinterest-square"></i></a>
-                        <a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                    </div>
+<div class="section color no-padding-vertical">
+    <div class="wrapper text-white">
+        <div class="footer">
+            <div class="footer-left">
+                <a href="/" class="footer-brand w-nav-brand w--current">
+                    <div>ToyStore</div>
+                </a>
+            </div>
+            <div class="footer-nav"><a href="/" class="footer-link w--current">Home</a><a href="/catalog" class="footer-link">Catalog</a><a href="/delivery" class="footer-link">Delivery</a><a href="/about" class="footer-link">About</a><a href="/contacts" class="footer-link">Contacts</a></div>
+            <div class="footer-social"><a href="https://elasticthemes.com" target="_blank" class="footer-social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec5227792568635e37_twitter-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="footer-social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec3cb36463d4cf4661_facebook-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="footer-social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec7fe624275552217c_instagram-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="footer-social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec6e93377c0bbdba8a_pinterest-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="footer-social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eecfff242b7c309e311_youtube-icon.svg" alt=""/></a></div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <div>Created with love by <a href="https://elasticthemes.com" target="_blank" class="link-white">Elastic Themes</a></div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <h2>Latest news</h2>
-                <ul class="list-unstyled">
-                    <li>25 May <a href="#">Nemo enim ipsam voluptatem</a></li>
-                    <li>01 May <a href="#">Neque porro quisquam est</a></li>
-                    <li>16 Apr <a href="#">Lorem ipsum dolor sit amet</a></li>
-                    <li>10 Jan <a href="#">Sed ut perspiciatis unde</a></li>
-                </ul>
-            </div>
-            <div class="contacts col-lg-3 col-md-3 col-sm-3">
-                <h2>Contacts</h2>
-                <p class="p-style3">
-                    4120 Lenox Avenue, New York, NY,<br/>
-                    10035 76 Saint Nicholas Avenue<br/>
-                    <a href="mailto:mail@bushido.com">mail@bushido.com</a><br/>
-                    +48 543765234<br/>
-                    +48 555 234 54 34<br/>
-                </p>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7">
-                    <p>&copy; 2014 BUSHIDO. All Rights Reserved. Designed by <a href="http://8guild.com/" target="_blank">8Guild</a></p>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-5">
-                    <div class="payment">
-                        <img src="img/payment/visa.png" alt="Visa"/>
-                        <img src="img/payment/paypal.png" alt="PayPal"/>
-                        <img src="img/payment/master.png" alt="Master Card"/>
-                        <img src="img/payment/discover.png" alt="Discover"/>
-                        <img src="img/payment/amazon.png" alt="Amazon"/>
-                    </div>
+                <div class="footer-bottom-right">
+                    <div>Powered by <a href="https://webflow.com/" target="_blank" class="link-white">Webflow</a></div>
+                    <div class="footer-bottom-divider"></div>
+                    <a href="/template/style-guide" class="link-white">Style Guide</a>
+                    <div class="footer-bottom-divider"></div>
+                    <a href="/template/licensing" class="link-white">Licensing</a>
                 </div>
             </div>
         </div>
     </div>
-</footer>
-<!--Footer Close-->
+</div>

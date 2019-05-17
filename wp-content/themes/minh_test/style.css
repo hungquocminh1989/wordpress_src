@@ -7,3 +7,6 @@ Text Domain: mmen
 #result_ajax{
 	background-color: red;
 }
+.w-webflow-badge{
+	display: none !important;
+}

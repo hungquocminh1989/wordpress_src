@@ -11,8 +11,10 @@ add_action('wp_enqueue_scripts', function(){
 	//repoLoadTemplateCss();
 	//repoLoadTemplateScript();
 	
-	wp_enqueue_style( '1' , TEMPLATE_FW7_URL . "/css/framework7.bundle.min.css");
-	wp_enqueue_script( '2' , TEMPLATE_FW7_URL . "/js/framework7.bundle.min.js");
+	//wp_enqueue_style( '1' , TEMPLATE_FW7_URL . "/css/framework7.bundle.min.css");
+	//wp_enqueue_script( '2' , TEMPLATE_FW7_URL . "/js/framework7.bundle.min.js");
+	
+	repoLoadTestTemplate();
 	
 	//Load style.css Wordpress, it's use overide
 	wp_enqueue_style('style',get_stylesheet_uri());	
@@ -59,4 +61,13 @@ function repoLoadDefaultScript(){
 	wp_enqueue_script( 'bootstrap.min' , TEMPLATE_URL . "/resources/assets/default/js/bootstrap/bootstrap.min.js", array('jquery'));
 	wp_enqueue_script('bootstrap-dialog' , TEMPLATE_URL . "/resources/assets/librarys/bootstrap3-dialog/js/bootstrap-dialog.js");
 	
+}
+
+function repoLoadTestTemplate(){
+	wp_enqueue_style( '1' , TEMPLATE_URL . "/resources/assets/shop_template_001/css/toystore-template.webflow.d76cf7e67.css");
+	//wp_enqueue_script('bootstrap-dialog' , TEMPLATE_URL . "/resources/assets/shop_template_001/js/html5shiv.min.js");
+	wp_enqueue_script('2' , TEMPLATE_URL . "/resources/assets/shop_template_001/js/jquery-3.3.1.min.js",NULL,NULL,TRUE);
+	//wp_enqueue_script('bootstrap-dialog' , TEMPLATE_URL . "/resources/assets/shop_template_001/js/placeholders.min.js");
+	wp_enqueue_script('3' , TEMPLATE_URL . "/resources/assets/shop_template_001/js/webflow.994f4272d.js",NULL,NULL,TRUE);
+	wp_enqueue_script('4' , TEMPLATE_URL . "/resources/assets/shop_template_001/js/webfont.js");
 }

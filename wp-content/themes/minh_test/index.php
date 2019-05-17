@@ -1,16 +1,11 @@
 <?php get_header(); ?>
-<div>
-	<?php
-		if(is_active_sidebar('sidebar-1') == TRUE){
-			dynamic_sidebar('sidebar-1');
-		}
-	?>
-    
-    <!--Page Content-->
-    <div class="page-content">
-    
-    </div>	
-</div>
-<a href="#" class="click_popup">Thông báo</a>
-<a id="result_ajax">None</a>
+
+<?php get_template_part('template-parts/content/intro-section');?>
+<?php get_template_part('template-parts/content/category-section');?>
+<?php get_template_part('template-parts/content/product-section');?>
+<?php get_template_part('template-parts/content/post-section');?>
+<?php get_template_part('template-parts/content/video-section');?>
+<?php get_template_part('template-parts/content/subscribe-section');?>
+<?php get_template_part('template-parts/content/social-section');?>
+           
 <?php get_footer(); ?>
