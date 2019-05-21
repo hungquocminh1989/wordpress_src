@@ -29,7 +29,9 @@ if (!class_exists( 'Foo_Widget')) {
 			if ( ! empty( $instance['title'] ) ) {
 				echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 			}
+			
 			echo esc_html__( 'Hello, World!', 'text_domain' );
+			//require_once(locate_template('inc/content/social-section.php')); 
 			echo $args['after_widget'];
 		}
 

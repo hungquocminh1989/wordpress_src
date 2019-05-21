@@ -23,3 +23,8 @@ http://themehats.com/themes/jango/
 
 Plugin:
 Post Type Order : Sắp xếp thứ tự của các post
+
+Bảo mật cho các form
+https://www.jamviet.com/nonce-bao-mat-cho-cac-form-cua-ban-tren-wordpress.html
+https://codetot.net/wordpress-nonce-ajax/
+

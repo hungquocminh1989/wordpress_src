@@ -6,6 +6,8 @@ add_action( 'after_setup_theme',  function(){
 	
 	repoLoadPluginFromZip('advanced-custom-fields-pro', 'acf.php');
 	repoLoadPluginFromZip('query-monitor', 'query-monitor.php');
+	repoLoadPluginFromZip('woocommerce', 'woocommerce.php');
+	repoLoadPluginFromZip('wp-reset', 'wp-reset.php');
 	repoLoadPluginFromStore();
 	
 });
@@ -33,13 +35,13 @@ function repoLoadPluginFromStore() {
 	// Khai bao plugin can cai dat
 	$plugins = [
 		[
-			'name' => 'Redux Framework',
-			'slug' => 'redux-framework',
+			'name' => 'Post Type Order',
+			'slug' => 'post-types-order',
 			'required' => true,
 		],
 		[
-			'name' => 'Post Type Order',
-			'slug' => 'post-types-order',
+			'name' => 'Custom Sidebars',
+			'slug' => 'custom-sidebars',
 			'required' => true,
 		],
 	];

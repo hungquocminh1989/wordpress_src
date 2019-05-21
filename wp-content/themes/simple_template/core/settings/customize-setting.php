@@ -5,7 +5,6 @@
 |-------------------------------------------------------------------------- 
 */
 if (!defined('ABSPATH')) die('Direct access forbidden.');
-if (!is_admin()) return;
 
 //Load  customize : get_theme_mod(...) hoac get_option(...) tuy theo luc add_setting khai bao type
 
