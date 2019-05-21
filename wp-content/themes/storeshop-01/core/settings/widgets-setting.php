@@ -11,5 +11,6 @@ add_action( 'widgets_init', 'repo_LoadWidgets');
 function repo_LoadWidgets(){
 	
 	register_widget( 'Foo_Widget' );
+	register_widget( 'Main_Widget' );
 	
 }

@@ -14,6 +14,7 @@ locate_template('/core/config.php', TRUE);
 locate_template('/core/classes/walkers/class-walker-nav-menu-category.php', TRUE);
 locate_template('/core/classes/walkers/class-walker-nav-menu-top.php', TRUE);
 locate_template('/core/classes/widgets/my_widget.php', TRUE);
+locate_template('/core/classes/widgets/content_widget.php', TRUE);
 locate_template('/core/classes/class-tgm-plugin-activation.php', TRUE);
 
 /*
