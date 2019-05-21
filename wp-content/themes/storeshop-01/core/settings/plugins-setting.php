@@ -1,23 +1,17 @@
 <?php
+if (!defined('ABSPATH')) die('Direct access forbidden.');
+if (!is_admin()) return;
+
 add_action( 'after_setup_theme',  function(){
 	
-	repoLoadPlugin('advanced-custom-fields-pro', 'acf.php');
-	repoLoadPlugin('woocommerce', 'woocommerce.php');
-	repoLoadPlugin('wp-debugging', 'wp-debugging.php');
-	repoLoadPlugin('wp-reset', 'wp-reset.php');
+	repoLoadPluginFromZip('advanced-custom-fields-pro', 'acf.php');
+	repoLoadPluginFromZip('query-monitor', 'query-monitor.php');
+	repoLoadPluginFromStore();
 	
 });
+add_action('tgmpa_register', 'repoLoadPluginFromStore');
 
-function repoLoadPlugin($pluginFolder, $pluginFile){
-	
-	if (function_exists('unzip_file') === FALSE){ 
-	    require_once ABSPATH . '/wp-admin/includes/file.php' ;
-		WP_Filesystem();
-	}
-	
-	if (function_exists('is_plugin_active') === FALSE){ 
-	    require_once ABSPATH . '/wp-admin/includes/plugin.php' ;
-	}
+function repoLoadPluginFromZip($pluginFolder, $pluginFile, $active = TRUE){
 	
 	/**
 	* Unzip and load plugin
@@ -25,10 +19,38 @@ function repoLoadPlugin($pluginFolder, $pluginFile){
 	if(file_exists(WP_PLUGIN_DIR . "/$pluginFolder") === FALSE){
 		if(unzip_file(TEMPLATEPATH . "/plugins/$pluginFolder" . '.zip',WP_PLUGIN_DIR) === TRUE)
 		{
-			/*if (is_plugin_active( WP_PLUGIN_DIR . "/$pluginFolder/$pluginFile") === FALSE) {
-				activate_plugin(WP_PLUGIN_DIR . "/$pluginFolder/$pluginFile");
-			}*/
+			if($active == TRUE){
+				wp_clean_plugins_cache();
+				if (is_plugin_active( WP_PLUGIN_DIR . "/$pluginFolder/$pluginFile") === FALSE) {
+					activate_plugin(WP_PLUGIN_DIR . "/$pluginFolder/$pluginFile");
+				}
+			}
 		}
 	}
 	
+}
+function repoLoadPluginFromStore() {
+	// Khai bao plugin can cai dat
+	$plugins = [
+		[
+			'name' => 'Redux Framework',
+			'slug' => 'redux-framework',
+			'required' => true,
+		],
+		[
+			'name' => 'Post Type Order',
+			'slug' => 'post-types-order',
+			'required' => true,
+		],
+	];
+
+	// Thiet lap TGM
+	$configs = [
+		'menu' => 'tp_plugin_install',
+		'has_notice' => true,
+		'dismissable' => false,
+		'is_automatic' => true,
+	];
+	tgmpa( $plugins, $configs );
+
 }

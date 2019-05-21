@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) die('Direct access forbidden.');
+if (!is_admin()) return;
+
 add_action( 'after_setup_theme',  function(){
 	
 	add_theme_support('title-tag');

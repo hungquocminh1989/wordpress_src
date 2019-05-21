@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) die('Direct access forbidden.');
+if (!is_admin()) return;
+
 /**
 * Define Metabox Option
 */

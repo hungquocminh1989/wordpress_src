@@ -1,4 +1,7 @@
 <?php
+if (!defined('ABSPATH')) die('Direct access forbidden.');
+if (!is_admin()) return;
+
 add_action( 'init', 'repoCreatePostType' );
 
 function repoCreatePostType() {
