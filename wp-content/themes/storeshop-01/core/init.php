@@ -8,6 +8,13 @@ locate_template('/core/config.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------
+| LOAD SHARE FUNCTIONS
+|-------------------------------------------------------------------------- 
+*/
+locate_template('/core/functions.php', TRUE);
+
+/*
+|--------------------------------------------------------------------------
 | LOAD CLASSES
 |-------------------------------------------------------------------------- 
 */
@@ -25,7 +32,8 @@ locate_template('/core/classes/class-tgm-plugin-activation.php', TRUE);
 locate_template('/core/settings/ajax-request.php', TRUE);
 locate_template('/core/settings/ajax-setting.php', TRUE);
 locate_template('/core/settings/client-side-script.php', TRUE);
-locate_template('/core/settings/create-default-pages.php', TRUE);
+locate_template('/core/settings/default-posts-setting.php', TRUE);
+locate_template('/core/settings/default-pages-setting.php', TRUE);
 locate_template('/core/settings/customize-setting.php', TRUE);
 locate_template('/core/settings/metabox-setting.php', TRUE);
 locate_template('/core/settings/navigation-menus-setting.php', TRUE);
