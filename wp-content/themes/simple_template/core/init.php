@@ -35,6 +35,7 @@ locate_template('/core/settings/widgets-setting.php', TRUE);
 locate_template('/core/settings/post-type-setting.php', TRUE);
 locate_template('/core/settings/plugins-setting.php', TRUE);
 locate_template('/core/settings/admin-setting.php', TRUE);
+locate_template('/core/settings/api-setting.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------

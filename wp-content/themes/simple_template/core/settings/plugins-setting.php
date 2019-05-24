@@ -33,13 +33,18 @@ function repoLoadPluginFromStore() {
 	// Khai bao plugin can cai dat
 	$plugins = [
 		[
-			'name' => 'Redux Framework',
-			'slug' => 'redux-framework',
+			'name' => 'Post Type Order',
+			'slug' => 'post-types-order',
 			'required' => true,
 		],
 		[
-			'name' => 'Post Type Order',
-			'slug' => 'post-types-order',
+			'name' => 'JWT Authentication for WP REST API',
+			'slug' => 'jwt-authentication-for-wp-rest-api',
+			'required' => true,
+		],
+		[
+			'name' => 'REST API Toolbox',
+			'slug' => 'rest-api-toolbox-settings',
 			'required' => true,
 		],
 	];

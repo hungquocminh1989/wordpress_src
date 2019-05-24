@@ -44,6 +44,21 @@ function repoLoadPluginFromStore() {
 			'slug' => 'custom-sidebars',
 			'required' => true,
 		],
+		[
+			'name' => 'Post Type Order',
+			'slug' => 'post-types-order',
+			'required' => true,
+		],
+		[
+			'name' => 'JWT Authentication for WP REST API',
+			'slug' => 'jwt-authentication-for-wp-rest-api',
+			'required' => true,
+		],
+		[
+			'name' => 'REST API Toolbox',
+			'slug' => 'rest-api-toolbox-settings',
+			'required' => true,
+		],
 	];
 
 	// Thiet lap TGM
