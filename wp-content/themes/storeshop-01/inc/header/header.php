@@ -1,120 +1,545 @@
-<div data-collapse="medium" data-animation="default" data-duration="400" class="nav-bar w-nav">
-    <div class="nav-top">
-        <div class="wrapper nav-top-wrapper">
-            <div class="nav-top-info">
-                <div class="nav-top-text">Call Us: +1 213 974-5898</div>
-                <div class="w-hidden-tiny">Email: <a href="#" class="link-white">toystore@template.com</a></div>
-            </div>
-            <div class="nav-top-social"><a href="https://elasticthemes.com" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec5227792568635e37_twitter-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec3cb36463d4cf4661_facebook-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec7fe624275552217c_instagram-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eec6e93377c0bbdba8a_pinterest-icon-white.svg" alt=""/></a><a href="https://elasticthemes.com" target="_blank" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5bae5eecfff242b7c309e311_youtube-icon.svg" alt=""/></a></div>
-        </div>
-    </div>
-    <div class="nav-main">
-        <div class="wrapper nav-bar-wrapper">
-            <a href="/" class="brand w-nav-brand w--current">
-                <div>ToyStore</div>
-            </a>
-            <div class="navigation">
-                <nav role="navigation" class="nav-menu w-nav-menu"><a href="/catalog" class="nav-link w-nav-link">Catalog</a><a href="/delivery" class="nav-link w-nav-link">Delivery</a><a href="/about" class="nav-link w-nav-link">About</a><a href="/contacts" class="nav-link w-nav-link">Contacts</a></nav>
-                <div class="menu-button w-nav-button">
-                    <div class="w-icon-nav-menu"></div>
-                </div>
-                <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="modal" data-wf-cart-query="
-                    query FetchCartInfo {
-                    site {
-                    commerce {
-                    quickCheckoutEnabled
-                    defaultCountry
-                    defaultCurrency
-                    }
-                    }
-                    database {
-                    commerceOrder {
-                    id
-                    startedOn
-                    updatedOn
-                    comment
-                    userItemsCount
-                    userItems {
-                    id count rowTotal { value } sku { id f__draft_0ht f__archived_0ht f_main_image_4dr { url file { width height size variants { quality height width s3Url size error } } } f_price_ { value unit } } product { f_name_ id f__draft_0ht f__archived_0ht }
-                    }
-                    extraItems {
-                    pluginName
-                    pluginId
-                    name
-                    price {
-                    value
-                    unit
-                    string
-                    }
-                    }
-                    total {
-                    value
-                    unit
-                    string
-                    }
-                    subtotal {
-                    value
-                    unit
-                    string
-                    }
-                    }
-                    }
-                    }
-                    " data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper">
-                    <a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink cart-button w-inline-block">
-                        <div class="w-inline-block">Cart</div>
-                        <img src="https://uploads-ssl.webflow.com/5badda2935e11303a89a461e/5baf75c3bf02346640399fec_cart-icon.svg" alt="" class="cart-icon"/>
-                        <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItemsCount%22%7D%7D%5D" data-wf-conditions="%5B%5D" class="w-commerce-commercecartopenlinkcount item-count">0</div>
-                    </a>
-                    <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal">
-                        <div data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer cart-container">
-                            <div class="w-commerce-commercecartheader cart-header">
-                                <h4 class="w-commerce-commercecartheading">Your Cart</h4>
-                                <a href="#" data-node-type="commerce-cart-close-link" class="w-commerce-commercecartcloselink w-inline-block">
-                                    <svg width="16px" height="16px" viewBox="0 0 16 16">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g fill-rule="nonzero" fill="#333333">
-                                                <polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="w-commerce-commercecartformwrapper">
-                                <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform">
-                                    <script type="text/x-wf-template" id="wf-template-9336d8a7-ba52-2880-0c69-78271ccadf80">%3Cdiv%20class%3D%22w-commerce-commercecartitem%22%3E%3Cimg%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%255B%255D%22%20src%3D%22%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%255B%255D%22%20class%3D%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePrice%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522price%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_price_%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%255B%255D%22%3E%240.00%3C%2Fdiv%3E%3Ca%20href%3D%22%23%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%255B%255D%22%20class%3D%22w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%3E%3Cdiv%20class%3D%22cart-remove-link%22%3ERemove%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cinput%20type%3D%22text%22%20required%3D%22%22%20pattern%3D%22%5B0-9%5D%2B%22%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%255B%255D%22%20class%3D%22w-commerce-commercecartquantity%20input%20quantity-input%22%20name%3D%22quantity%22%20min%3D%220%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E</script>
-                                    <div class="w-commerce-commercecartlist cart-list" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-9336d8a7-ba52-2880-0c69-78271ccadf80">
-                                        <div class="w-commerce-commercecartitem">
-                                            <img data-wf-bindings="%5B%7B%22src%22%3A%7B%22type%22%3A%22ImageRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_main_image_4dr%22%7D%7D%5D" data-wf-conditions="%5B%5D" src="" alt="" class="w-commerce-commercecartitemimage w-dyn-bind-empty"/>
-                                            <div class="w-commerce-commercecartiteminfo">
-                                                <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_name_%22%7D%7D%5D" data-wf-conditions="%5B%5D" class="w-commerce-commercecartproductname w-dyn-bind-empty"></div>
-                                                <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_price_%22%7D%7D%5D" data-wf-conditions="%5B%5D">$0.00</div>
-                                                <a href="#" data-wf-bindings="%5B%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D" data-wf-conditions="%5B%5D" class="w-inline-block" data-wf-cart-action="remove-item" data-commerce-sku-id="">
-                                                    <div class="cart-remove-link">Remove</div>
-                                                </a>
-                                            </div>
-                                            <input type="text" required="" pattern="[0-9]+" data-wf-bindings="%5B%7B%22value%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.count%22%7D%7D%2C%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D" data-wf-conditions="%5B%5D" class="w-commerce-commercecartquantity input quantity-input" name="quantity" min="0" data-wf-cart-action="update-item-quantity" data-commerce-sku-id="" value="1"/>
-                                        </div>
-                                    </div>
-                                    <div class="w-commerce-commercecartfooter cart-footer">
-                                        <div class="w-commerce-commercecartlineitem">
-                                            <div>Subtotal</div>
-                                            <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.subtotal%22%7D%7D%5D" data-wf-conditions="%5B%5D" class="w-commerce-commercecartordervalue"></div>
-                                        </div>
-                                        <div><a href="/checkout" value="Continue to Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton button" data-loading-text="Hang Tight...">Continue to Checkout</a></div>
-                                    </div>
-                                </form>
-                                <div class="w-commerce-commercecartemptystate">
-                                    <div>No items found.</div>
-                                </div>
-                                <div style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate form-error">
-                                    <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-general-error="Something went wrong when adding this item to the cart.">Product is not available in this quantity.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- top-header -->
+<div class="agile-main-top">
+	<div class="container-fluid">
+		<div class="row main-top-w3l py-2">
+			<div class="col-lg-4 header-most-top">
+				<p class="text-white text-lg-left text-center">Offer Zone Top Deals & Discounts
+					<i class="fas fa-shopping-cart ml-1"></i>
+				</p>
+			</div>
+			<div class="col-lg-8 header-right mt-lg-0 mt-2">
+				<!-- header lists -->
+				<ul>
+					<li class="text-center border-right text-white">
+						<a class="play-icon popup-with-zoom-anim text-white" href="#small-dialog1">
+							<i class="fas fa-map-marker mr-2"></i>Select Location</a>
+					</li>
+					<li class="text-center border-right text-white">
+						<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
+							<i class="fas fa-truck mr-2"></i>Track Order</a>
+					</li>
+					<li class="text-center border-right text-white">
+						<i class="fas fa-phone mr-2"></i> 001 234 5678
+					</li>
+					<li class="text-center border-right text-white">
+						<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
+							<i class="fas fa-sign-in-alt mr-2"></i> Log In </a>
+					</li>
+					<li class="text-center text-white">
+						<a href="#" data-toggle="modal" data-target="#exampleModal2" class="text-white">
+							<i class="fas fa-sign-out-alt mr-2"></i>Register </a>
+					</li>
+				</ul>
+				<!-- //header lists -->
+			</div>
+		</div>
+	</div>
 </div>
+
+<!-- Button trigger modal(select-location) -->
+<div id="small-dialog1" class="mfp-hide">
+	<div class="select-city">
+		<h3>
+			<i class="fas fa-map-marker"></i> Please Select Your Location</h3>
+		<select class="list_of_cities">
+			<optgroup label="Popular Cities">
+				<option selected style="display:none;color:#eee;">Select City</option>
+				<option>Birmingham</option>
+				<option>Anchorage</option>
+				<option>Phoenix</option>
+				<option>Little Rock</option>
+				<option>Los Angeles</option>
+				<option>Denver</option>
+				<option>Bridgeport</option>
+				<option>Wilmington</option>
+				<option>Jacksonville</option>
+				<option>Atlanta</option>
+				<option>Honolulu</option>
+				<option>Boise</option>
+				<option>Chicago</option>
+				<option>Indianapolis</option>
+			</optgroup>
+			<optgroup label="Alabama">
+				<option>Birmingham</option>
+				<option>Montgomery</option>
+				<option>Mobile</option>
+				<option>Huntsville</option>
+				<option>Tuscaloosa</option>
+			</optgroup>
+			<optgroup label="Alaska">
+				<option>Anchorage</option>
+				<option>Fairbanks</option>
+				<option>Juneau</option>
+				<option>Sitka</option>
+				<option>Ketchikan</option>
+			</optgroup>
+			<optgroup label="Arizona">
+				<option>Phoenix</option>
+				<option>Tucson</option>
+				<option>Mesa</option>
+				<option>Chandler</option>
+				<option>Glendale</option>
+			</optgroup>
+			<optgroup label="Arkansas">
+				<option>Little Rock</option>
+				<option>Fort Smith</option>
+				<option>Fayetteville</option>
+				<option>Springdale</option>
+				<option>Jonesboro</option>
+			</optgroup>
+			<optgroup label="California">
+				<option>Los Angeles</option>
+				<option>San Diego</option>
+				<option>San Jose</option>
+				<option>San Francisco</option>
+				<option>Fresno</option>
+			</optgroup>
+			<optgroup label="Colorado">
+				<option>Denver</option>
+				<option>Colorado</option>
+				<option>Aurora</option>
+				<option>Fort Collins</option>
+				<option>Lakewood</option>
+			</optgroup>
+			<optgroup label="Connecticut">
+				<option>Bridgeport</option>
+				<option>New Haven</option>
+				<option>Hartford</option>
+				<option>Stamford</option>
+				<option>Waterbury</option>
+			</optgroup>
+			<optgroup label="Delaware">
+				<option>Wilmington</option>
+				<option>Dover</option>
+				<option>Newark</option>
+				<option>Bear</option>
+				<option>Middletown</option>
+			</optgroup>
+			<optgroup label="Florida">
+				<option>Jacksonville</option>
+				<option>Miami</option>
+				<option>Tampa</option>
+				<option>St. Petersburg</option>
+				<option>Orlando</option>
+			</optgroup>
+			<optgroup label="Georgia">
+				<option>Atlanta</option>
+				<option>Augusta</option>
+				<option>Columbus</option>
+				<option>Savannah</option>
+				<option>Athens</option>
+			</optgroup>
+			<optgroup label="Hawaii">
+				<option>Honolulu</option>
+				<option>Pearl City</option>
+				<option>Hilo</option>
+				<option>Kailua</option>
+				<option>Waipahu</option>
+			</optgroup>
+			<optgroup label="Idaho">
+				<option>Boise</option>
+				<option>Nampa</option>
+				<option>Meridian</option>
+				<option>Idaho Falls</option>
+				<option>Pocatello</option>
+			</optgroup>
+			<optgroup label="Illinois">
+				<option>Chicago</option>
+				<option>Aurora</option>
+				<option>Rockford</option>
+				<option>Joliet</option>
+				<option>Naperville</option>
+			</optgroup>
+			<optgroup label="Indiana">
+				<option>Indianapolis</option>
+				<option>Fort Wayne</option>
+				<option>Evansville</option>
+				<option>South Bend</option>
+				<option>Hammond</option>
+			</optgroup>
+			<optgroup label="Iowa">
+				<option>Des Moines</option>
+				<option>Cedar Rapids</option>
+				<option>Davenport</option>
+				<option>Sioux City</option>
+				<option>Waterloo</option>
+			</optgroup>
+			<optgroup label="Kansas">
+				<option>Wichita</option>
+				<option>Overland Park</option>
+				<option>Kansas City</option>
+				<option>Topeka</option>
+				<option>Olathe </option>
+			</optgroup>
+			<optgroup label="Kentucky">
+				<option>Louisville</option>
+				<option>Lexington</option>
+				<option>Bowling Green</option>
+				<option>Owensboro</option>
+				<option>Covington</option>
+			</optgroup>
+			<optgroup label="Louisiana">
+				<option>New Orleans</option>
+				<option>Baton Rouge</option>
+				<option>Shreveport</option>
+				<option>Metairie</option>
+				<option>Lafayette</option>
+			</optgroup>
+			<optgroup label="Maine">
+				<option>Portland</option>
+				<option>Lewiston</option>
+				<option>Bangor</option>
+				<option>South Portland</option>
+				<option>Auburn</option>
+			</optgroup>
+			<optgroup label="Maryland">
+				<option>Baltimore</option>
+				<option>Frederick</option>
+				<option>Rockville</option>
+				<option>Gaithersburg</option>
+				<option>Bowie</option>
+			</optgroup>
+			<optgroup label="Massachusetts">
+				<option>Boston</option>
+				<option>Worcester</option>
+				<option>Springfield</option>
+				<option>Lowell</option>
+				<option>Cambridge</option>
+			</optgroup>
+			<optgroup label="Michigan">
+				<option>Detroit</option>
+				<option>Grand Rapids</option>
+				<option>Warren</option>
+				<option>Sterling Heights</option>
+				<option>Lansing</option>
+			</optgroup>
+			<optgroup label="Minnesota">
+				<option>Minneapolis</option>
+				<option>St. Paul</option>
+				<option>Rochester</option>
+				<option>Duluth</option>
+				<option>Bloomington</option>
+			</optgroup>
+			<optgroup label="Mississippi">
+				<option>Jackson</option>
+				<option>Gulfport</option>
+				<option>Southaven</option>
+				<option>Hattiesburg</option>
+				<option>Biloxi</option>
+			</optgroup>
+			<optgroup label="Missouri">
+				<option>Kansas City</option>
+				<option>St. Louis</option>
+				<option>Springfield</option>
+				<option>Independence</option>
+				<option>Columbia</option>
+			</optgroup>
+			<optgroup label="Montana">
+				<option>Billings</option>
+				<option>Missoula</option>
+				<option>Great Falls</option>
+				<option>Bozeman</option>
+				<option>Butte-Silver Bow</option>
+			</optgroup>
+			<optgroup label="Nebraska">
+				<option>Omaha</option>
+				<option>Lincoln</option>
+				<option>Bellevue</option>
+				<option>Grand Island</option>
+				<option>Kearney</option>
+			</optgroup>
+			<optgroup label="Nevada">
+				<option>Las Vegas</option>
+				<option>Henderson</option>
+				<option>North Las Vegas</option>
+				<option>Reno</option>
+				<option>Sunrise Manor</option>
+			</optgroup>
+			<optgroup label="New Hampshire">
+				<option>Manchesters</option>
+				<option>Nashua</option>
+				<option>Concord</option>
+				<option>Dover</option>
+				<option>Rochester</option>
+			</optgroup>
+			<optgroup label="New Jersey">
+				<option>Newark</option>
+				<option>Jersey City</option>
+				<option>Paterson</option>
+				<option>Elizabeth</option>
+				<option>Edison</option>
+			</optgroup>
+			<optgroup label="New Mexico">
+				<option>Albuquerque</option>
+				<option>Las Cruces</option>
+				<option>Rio Rancho</option>
+				<option>Santa Fe</option>
+				<option>Roswell</option>
+			</optgroup>
+			<optgroup label="New York">
+				<option>New York</option>
+				<option>Buffalo</option>
+				<option>Rochester</option>
+				<option>Yonkers</option>
+				<option>Syracuse</option>
+			</optgroup>
+			<optgroup label="North Carolina">
+				<option>Charlotte</option>
+				<option>Raleigh</option>
+				<option>Greensboro</option>
+				<option>Winston-Salem</option>
+				<option>Durham</option>
+			</optgroup>
+			<optgroup label="North Dakota">
+				<option>Fargo</option>
+				<option>Bismarck</option>
+				<option>Grand Forks</option>
+				<option>Minot</option>
+				<option>West Fargo</option>
+			</optgroup>
+			<optgroup label="Ohio">
+				<option>Columbus</option>
+				<option>Cleveland</option>
+				<option>Cincinnati</option>
+				<option>Toledo</option>
+				<option>Akron</option>
+			</optgroup>
+			<optgroup label="Oklahoma">
+				<option>Oklahoma City</option>
+				<option>Tulsa</option>
+				<option>Norman</option>
+				<option>Broken Arrow</option>
+				<option>Lawton</option>
+			</optgroup>
+			<optgroup label="Oregon">
+				<option>Portland</option>
+				<option>Eugene</option>
+				<option>Salem</option>
+				<option>Gresham</option>
+				<option>Hillsboro</option>
+			</optgroup>
+			<optgroup label="Pennsylvania">
+				<option>Philadelphia</option>
+				<option>Pittsburgh</option>
+				<option>Allentown</option>
+				<option>Erie</option>
+				<option>Reading</option>
+			</optgroup>
+			<optgroup label="Rhode Island">
+				<option>Providence</option>
+				<option>Warwick</option>
+				<option>Cranston</option>
+				<option>Pawtucket</option>
+				<option>East Providence</option>
+			</optgroup>
+			<optgroup label="South Carolina">
+				<option>Columbia</option>
+				<option>Charleston</option>
+				<option>North Charleston</option>
+				<option>Mount Pleasant</option>
+				<option>Rock Hill</option>
+			</optgroup>
+			<optgroup label="South Dakota">
+				<option>Sioux Falls</option>
+				<option>Rapid City</option>
+				<option>Aberdeen</option>
+				<option>Brookings</option>
+				<option>Watertown</option>
+			</optgroup>
+			<optgroup label="Tennessee">
+				<option>Memphis</option>
+				<option>Nashville</option>
+				<option>Knoxville</option>
+				<option>Chattanooga</option>
+				<option>Clarksville</option>
+			</optgroup>
+			<optgroup label="Texas">
+				<option>Houston</option>
+				<option>San Antonio</option>
+				<option>Dallas</option>
+				<option>Austin</option>
+				<option>Fort Worth</option>
+			</optgroup>
+			<optgroup label="Utah">
+				<option>Salt Lake City</option>
+				<option>West Valley City</option>
+				<option>Provo</option>
+				<option>West Jordan</option>
+				<option>Orem</option>
+			</optgroup>
+			<optgroup label="Vermont">
+				<option>Burlington</option>
+				<option>Essex</option>
+				<option>South Burlington</option>
+				<option>Colchester</option>
+				<option>Rutland</option>
+			</optgroup>
+			<optgroup label="Virginia">
+				<option>Virginia Beach</option>
+				<option>Norfolk</option>
+				<option>Chesapeake</option>
+				<option>Arlington</option>
+				<option>Richmond</option>
+			</optgroup>
+			<optgroup label="Washington">
+				<option>Seattle</option>
+				<option>Spokane</option>
+				<option>Tacoma</option>
+				<option>Vancouver</option>
+				<option>Bellevue</option>
+			</optgroup>
+			<optgroup label="West Virginia">
+				<option>Charleston</option>
+				<option>Huntington</option>
+				<option>Parkersburg</option>
+				<option>Morgantown</option>
+				<option>Wheeling</option>
+			</optgroup>
+			<optgroup label="Wisconsin">
+				<option>Milwaukee</option>
+				<option>Madison</option>
+				<option>Green Bay</option>
+				<option>Kenosha</option>
+				<option>Racine</option>
+			</optgroup>
+			<optgroup label="Wyoming">
+				<option>Cheyenne</option>
+				<option>Casper</option>
+				<option>Laramie</option>
+				<option>Gillette</option>
+				<option>Rock Springs</option>
+			</optgroup>
+		</select>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //shop locator (popup) -->
+
+<!-- modals -->
+<!-- log in -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-center">Log In</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="form-group">
+						<label class="col-form-label">Username</label>
+						<input type="text" class="form-control" placeholder=" " name="Name" required="">
+					</div>
+					<div class="form-group">
+						<label class="col-form-label">Password</label>
+						<input type="password" class="form-control" placeholder=" " name="Password" required="">
+					</div>
+					<div class="right-w3l">
+						<input type="submit" class="form-control" value="Log in">
+					</div>
+					<div class="sub-w3l">
+						<div class="custom-control custom-checkbox mr-sm-2">
+							<input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+							<label class="custom-control-label" for="customControlAutosizing">Remember me?</label>
+						</div>
+					</div>
+					<p class="text-center dont-do mt-3">Don't have an account?
+						<a href="#" data-toggle="modal" data-target="#exampleModal2">
+							Register Now</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- register -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Register</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="form-group">
+						<label class="col-form-label">Your Name</label>
+						<input type="text" class="form-control" placeholder=" " name="Name" required="">
+					</div>
+					<div class="form-group">
+						<label class="col-form-label">Email</label>
+						<input type="email" class="form-control" placeholder=" " name="Email" required="">
+					</div>
+					<div class="form-group">
+						<label class="col-form-label">Password</label>
+						<input type="password" class="form-control" placeholder=" " name="Password" id="password1" required="">
+					</div>
+					<div class="form-group">
+						<label class="col-form-label">Confirm Password</label>
+						<input type="password" class="form-control" placeholder=" " name="Confirm Password" id="password2" required="">
+					</div>
+					<div class="right-w3l">
+						<input type="submit" class="form-control" value="Register">
+					</div>
+					<div class="sub-w3l">
+						<div class="custom-control custom-checkbox mr-sm-2">
+							<input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
+							<label class="custom-control-label" for="customControlAutosizing2">I Accept to the Terms & Conditions</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //modal -->
+<!-- //top-header -->
+
+<!-- header-bottom-->
+<div class="header-bot">
+	<div class="container">
+		<div class="row header-bot_inner_wthreeinfo_header_mid">
+			<!-- logo -->
+			<div class="col-md-3 logo_agile">
+				<h1 class="text-center">
+					<a href="index.html" class="font-weight-bold font-italic">
+						<img src="<?php echo TEMPLATE_URL; ?>/public/images/logo2.png" alt=" " class="img-fluid">Electro Store
+					</a>
+				</h1>
+			</div>
+			<!-- //logo -->
+			<!-- header-bot -->
+			<div class="col-md-9 header mt-4 mb-md-0 mb-4">
+				<div class="row">
+					<!-- search -->
+					<div class="col-10 agileits_search">
+						<form class="form-inline" action="#" method="post">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required>
+							<button class="btn my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</div>
+					<!-- //search -->
+					<!-- cart details -->
+					<div class="col-2 top_nav_right text-center mt-sm-0 mt-2">
+						<div class="wthreecartaits wthreecartaits2 cart cart box_1">
+							<form action="#" method="post" class="last">
+								<input type="hidden" name="cmd" value="_cart">
+								<input type="hidden" name="display" value="1">
+								<button class="btn w3view-cart" type="submit" name="submit" value="">
+									<i class="fas fa-cart-arrow-down"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+					<!-- //cart details -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- shop locator (popup) -->
+<!-- //header-bottom -->

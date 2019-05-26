@@ -10,5 +10,6 @@
 	</head>
 	<body>
 		<?php get_template_part('inc/header/header');?>
+		<?php get_template_part('inc/navigation/top-menu');?>
 		<main id="app" class="main">
 		<!--Start Main-->
