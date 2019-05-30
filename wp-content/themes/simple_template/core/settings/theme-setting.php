@@ -2,8 +2,11 @@
 if (!defined('ABSPATH')) die('Direct access forbidden.');
 if (!is_admin()) return;
 
-add_action( 'after_setup_theme',  function(){
-	
+add_action( 'after_setup_theme', 'repoSetupTheme');
+add_action('switch_theme', 'repoDeactivateTheme');
+add_action('after_switch_theme', 'repoActiveTheme');
+
+function repoSetupTheme(){
 	add_theme_support('title-tag');
 
 	add_editor_style();
@@ -21,5 +24,12 @@ add_action( 'after_setup_theme',  function(){
 	add_theme_support( 'woocommerce' );
 
 	//load_theme_textdomain('mmen', TEMPLATE_DIRECTORY . '/resources/lang');
+}
 
-});
+function repoActiveTheme(){
+	 
+}
+
+function repoDeactivateTheme(){
+	 
+}
