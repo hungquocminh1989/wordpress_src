@@ -4,7 +4,7 @@
 | REST API
 |-------------------------------------------------------------------------- 
 */
-if (!defined('ABSPATH')) die('Direct access forbidden.');
+defined( 'ABSPATH' ) || exit;
 
 function my_awesome_func($request) {
 	

@@ -1,5 +1,10 @@
 <?php
-if (!defined('ABSPATH')) die('Direct access forbidden.');
+/*
+|--------------------------------------------------------------------------
+| POSTTYPE
+|-------------------------------------------------------------------------- 
+*/
+defined( 'ABSPATH' ) || exit;
 if (!is_admin()) return;
 
 add_action( 'init', 'repoCreatePostType' );

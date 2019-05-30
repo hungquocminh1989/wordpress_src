@@ -1,3 +1,5 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
+
 <!-- footer -->
 <footer>
 	<div class="footer-top-first">

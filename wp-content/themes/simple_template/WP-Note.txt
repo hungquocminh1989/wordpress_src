@@ -28,3 +28,6 @@ Bảo mật cho các form
 https://www.jamviet.com/nonce-bao-mat-cho-cac-form-cua-ban-tren-wordpress.html
 https://codetot.net/wordpress-nonce-ajax/
 
+http://hookr.io
+https://codex.wordpress.org/Template_Tags
+

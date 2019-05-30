@@ -1,3 +1,5 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
+
 <!-- nav smooth scroll -->
 <script>
 	$(document).ready(function () {

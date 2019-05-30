@@ -1,3 +1,5 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
+
 <!-- top-header -->
 <div class="agile-main-top">
 	<div class="container-fluid">

@@ -1,3 +1,5 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
+
 <!-- product left -->
 <div class="agileinfo-ads-display col-lg-9">
 	<div class="wrapper">

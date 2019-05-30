@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 /*
 |--------------------------------------------------------------------------
 | https://www.wp-hasty.com/tools/wordpress-widget-generator/

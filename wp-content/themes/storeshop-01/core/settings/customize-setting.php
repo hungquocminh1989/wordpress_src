@@ -4,7 +4,7 @@
 | https://codex.wordpress.org/Plugin_API/Action_Reference/customize_register
 |-------------------------------------------------------------------------- 
 */
-if (!defined('ABSPATH')) die('Direct access forbidden.');
+defined( 'ABSPATH' ) || exit;
 
 //Load  customize : get_theme_mod(...) hoac get_option(...) tuy theo luc add_setting khai bao type
 

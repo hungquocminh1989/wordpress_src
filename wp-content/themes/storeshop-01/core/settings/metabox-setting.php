@@ -1,5 +1,5 @@
 <?php
-if (!defined('ABSPATH')) die('Direct access forbidden.');
+defined( 'ABSPATH' ) || exit;
 if (!is_admin()) return;
 
 /**

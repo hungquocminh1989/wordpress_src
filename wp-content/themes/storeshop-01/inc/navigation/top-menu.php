@@ -1,3 +1,5 @@
+<?php defined( 'ABSPATH' ) || exit; ?>
+
 <!-- navigation -->
 <div class="navbar-inner">
 	<div class="container">

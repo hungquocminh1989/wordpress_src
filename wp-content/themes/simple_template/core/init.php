@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 /*
 |--------------------------------------------------------------------------
 | LOAD CONFIG
@@ -36,6 +38,8 @@ locate_template('/core/settings/post-type-setting.php', TRUE);
 locate_template('/core/settings/plugins-setting.php', TRUE);
 locate_template('/core/settings/admin-setting.php', TRUE);
 locate_template('/core/settings/api-setting.php', TRUE);
+locate_template('/core/settings/taxonomy-setting.php', TRUE);
+locate_template('/core/settings/shortcode-setting.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------

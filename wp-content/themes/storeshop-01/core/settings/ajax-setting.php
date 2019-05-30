@@ -1,4 +1,5 @@
 <?php
+defined( 'ABSPATH' ) || exit;
 
 add_action('wp_footer','repo_LoadCoreAjaxDialog');
 

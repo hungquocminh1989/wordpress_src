@@ -1,5 +1,5 @@
 <?php
-if (!defined('ABSPATH')) die('Direct access forbidden.');
+defined( 'ABSPATH' ) || exit;
 if (!is_admin()) return;
 
 add_action( 'after_setup_theme',  function(){

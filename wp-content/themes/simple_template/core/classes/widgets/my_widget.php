@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 if (!class_exists( 'Foo_Widget')) {
 	/**
 	 * Adds Foo_Widget widget.

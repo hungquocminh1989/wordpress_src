@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) || exit;
+
 class Walker_Nav_Menu_Category extends Walker_Nav_Menu {
 
 	public function end_lvl( &$output, $depth = 0, $args = array() ) {
