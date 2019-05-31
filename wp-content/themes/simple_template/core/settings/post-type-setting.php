@@ -11,9 +11,9 @@ add_action( 'init', 'repoCreatePostType' );
 
 function repoCreatePostType() {
 	
-	register_post_type( 'urgent_message',
+	register_post_type( 'news',
         [
-        'label' => '緊急メッセージ',
+        'label' => 'News',
         'public' => true,
         'has_archive' => true,
         'menu_position' => 5,
