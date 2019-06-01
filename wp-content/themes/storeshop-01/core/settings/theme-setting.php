@@ -13,11 +13,11 @@ function repoSetupTheme(){
 
 	// This theme uses post thumbnails
 	add_theme_support('post-thumbnails');
-	add_image_size('img_215_170',215,170,true);
-	add_image_size('img_253_187',253,187,true);
-	add_image_size('img_258_185',258,185,true);
-	add_image_size('img_383_265',383,265,true);
-	add_image_size('img_400_185',400,185,true);
+	add_image_size('img_215_170',215,170,TRUE);
+	add_image_size('img_253_187',253,187,TRUE);
+	add_image_size('img_258_185',258,185,TRUE);
+	add_image_size('img_383_265',383,265,TRUE);
+	add_image_size('img_400_185',400,185,TRUE);
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support('automatic-feed-links');

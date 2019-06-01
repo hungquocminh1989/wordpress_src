@@ -37,36 +37,41 @@ function repoLoadPluginFromStore() {
 		[
 			'name' => 'Post Type Order',
 			'slug' => 'post-types-order',
-			'required' => true,
+			'required' => TRUE,
 		],
 		[
 			'name' => 'Custom Sidebars',
 			'slug' => 'custom-sidebars',
-			'required' => true,
+			'required' => TRUE,
 		],
 		[
 			'name' => 'Post Type Order',
 			'slug' => 'post-types-order',
-			'required' => true,
+			'required' => TRUE,
 		],
 		[
 			'name' => 'JWT Authentication for WP REST API',
 			'slug' => 'jwt-authentication-for-wp-rest-api',
-			'required' => true,
+			'required' => TRUE,
 		],
 		[
 			'name' => 'REST API Toolbox',
 			'slug' => 'rest-api-toolbox-settings',
-			'required' => true,
+			'required' => TRUE,
+		],
+		[
+			'name' => 'Woocommerce',
+			'slug' => 'woocommerce',
+			'required' => TRUE,
 		],
 	];
 
 	// Thiet lap TGM
 	$configs = [
 		'menu' => 'tp_plugin_install',
-		'has_notice' => true,
+		'has_notice' => TRUE,
 		'dismissable' => false,
-		'is_automatic' => true,
+		'is_automatic' => TRUE,
 	];
 	tgmpa( $plugins, $configs );
 
