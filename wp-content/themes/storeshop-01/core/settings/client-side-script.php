@@ -36,5 +36,9 @@ function repoLoadTemplate(){
 
 function repoLoadTagScript() {
     locate_template('/inc/script/index.php', TRUE);
-    locate_template('/inc/script/product-single.php', TRUE);
+    
+    if(is_product() == TRUE){
+		locate_template('/inc/script/product-single.php', TRUE);
+	}
+    
 }

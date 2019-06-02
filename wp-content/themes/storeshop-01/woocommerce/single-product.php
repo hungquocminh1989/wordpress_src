@@ -21,6 +21,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<!-- banner-2 -->
+<div class="page-head_agile_info_w3l">
+
+</div>
+<!-- //banner-2 -->
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
