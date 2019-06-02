@@ -48,6 +48,7 @@ locate_template('/core/settings/admin-setting.php', TRUE);
 locate_template('/core/settings/api-setting.php', TRUE);
 locate_template('/core/settings/taxonomy-setting.php', TRUE);
 locate_template('/core/settings/shortcode-setting.php', TRUE);
+locate_template('/core/settings/woocommerce-setting.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------

@@ -18,6 +18,7 @@ function repoLoadTemplate(){
 	wp_enqueue_style( 'css3' , TEMPLATE_URL . "/public/css/fontawesome-all.css");
 	wp_enqueue_style( 'css4' , TEMPLATE_URL . "/public/css/popuo-box.css");
 	wp_enqueue_style( 'css5' , TEMPLATE_URL . "/public/css/menu.css");
+	wp_enqueue_style( 'css6' , TEMPLATE_URL . "/public/css/flexslider.css");
 	wp_enqueue_style( 'font1' , "//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext");
 	wp_enqueue_style( 'font2' , "//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese");
 	
@@ -29,8 +30,11 @@ function repoLoadTemplate(){
 	wp_enqueue_script('js6' , TEMPLATE_URL . "/public/js/move-top.js",NULL,NULL,TRUE);
 	wp_enqueue_script('js7' , TEMPLATE_URL . "/public/js/easing.js",NULL,NULL,TRUE);
 	wp_enqueue_script('js8' , TEMPLATE_URL . "/public/js/bootstrap.js",NULL,NULL,TRUE);
+	wp_enqueue_script('js9' , TEMPLATE_URL . "/public/js/imagezoom.js",NULL,NULL,TRUE);
+	wp_enqueue_script('js10' , TEMPLATE_URL . "/public/js/jquery.flexslider.js",NULL,NULL,TRUE);
 }
 
 function repoLoadTagScript() {
     locate_template('/inc/script/index.php', TRUE);
+    locate_template('/inc/script/product-single.php', TRUE);
 }

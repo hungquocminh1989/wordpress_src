@@ -464,7 +464,8 @@ h3.tittle-w3l span {
     outline: none;
 }
 
-.snipcart-details input.button {
+/*.snipcart-details input.button*/
+.snipcart-details a.button {
     font-size: 13px;
     color: #fff;
     background: #0879c9;

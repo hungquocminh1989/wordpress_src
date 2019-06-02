@@ -4,6 +4,8 @@
 
 <?php get_template_part('inc/content/intro-section');?>
 
+<?php get_template_part('inc/content/product-single-section');?>
+
 <!-- top Products -->
 <div class="ads-grid py-sm-5 py-4">
 	<div class="container py-xl-4 py-lg-2">

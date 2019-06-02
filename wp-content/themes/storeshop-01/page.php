@@ -4,7 +4,7 @@
 <div>
 	<!--Page Content-->
     <div class="page-content">
-		Page.
+		Page.11
     </div>
 </div>
 <?php get_footer(); ?>

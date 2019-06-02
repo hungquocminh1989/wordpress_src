@@ -38,3 +38,8 @@ if(is_admin() === TRUE){
 	    }
 	}
 }
+
+function repoDebugVar($object){
+	echo "<pre>";
+	var_dump($object);
+}
