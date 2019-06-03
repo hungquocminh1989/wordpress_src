@@ -64,6 +64,11 @@ function repoLoadPluginFromStore() {
 			'slug' => 'woocommerce',
 			'required' => TRUE,
 		],
+		[
+			'name' => 'Regenerate Thumbnails',
+			'slug' => 'regenerate-thumbnails',
+			'required' => TRUE,
+		],
 	];
 
 	// Thiet lap TGM

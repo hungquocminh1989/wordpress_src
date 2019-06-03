@@ -27,6 +27,21 @@ get_header( 'shop' ); ?>
 </div>
 <!-- //banner-2 -->
 
+	<div class="services-breadcrumb">
+		<div class="agile_inner_breadcrumb">
+			<div class="container">
+				<?php
+				/**
+				 * Hook: repo_woo_single_product_breadcrumb.
+				 *
+				 * @hooked woocommerce_breadcrumb
+				 */
+				do_action( 'repo_woo_single_product_breadcrumb' );
+				?>
+			</div>
+		</div>
+	</div>
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -34,7 +49,7 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
-		do_action( 'woocommerce_before_main_content' );
+		//do_action( 'woocommerce_before_main_content' );
 	?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -59,6 +74,40 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
 		do_action( 'woocommerce_sidebar' );
+	?>
+	
+	<?php
+		/**
+		 * woocommerce_before_main_content hook.
+		 *
+		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+		 * @hooked woocommerce_breadcrumb - 20
+		 */
+		//do_action( 'woocommerce_before_main_content' );
+	?>
+
+		<?php //while ( have_posts() ) : the_post(); ?>
+
+			<?php //wc_get_template_part( 'content', 'single-product' ); ?>
+
+		<?php //endwhile; // end of the loop. ?>
+
+	<?php
+		/**
+		 * woocommerce_after_main_content hook.
+		 *
+		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+		 */
+		//do_action( 'woocommerce_after_main_content' );
+	?>
+
+	<?php
+		/**
+		 * woocommerce_sidebar hook.
+		 *
+		 * @hooked woocommerce_get_sidebar - 10
+		 */
+		//do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php get_footer( 'shop' );
