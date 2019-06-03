@@ -16,6 +16,14 @@
 				</li>
 				<li>Single Product 1</li>
 			</ul>
+			<?php
+			/**
+			 * Hook: repo_woo_single_product_breadcrumb.
+			 *
+			 * @hooked woocommerce_breadcrumb
+			 */
+			do_action( 'repo_woo_single_product_breadcrumb' );
+			?>
 		</div>
 	</div>
 </div>
@@ -51,12 +59,37 @@
 					</div>
 				</div>
 			</div>
+			<?php
+			/**
+			 * Hook: repo_woo_single_product_images.
+			 *
+			 * @hooked woocommerce_show_product_images
+			 */
+			do_action( 'repo_woo_single_product_images' );
+			?>
 
 			<div class="col-lg-7 single-right-left simpleCart_shelfItem">
 				<h3 class="mb-3">Samsung Galaxy J7 Prime (Gold, 16 GB) (3 GB RAM)</h3>
+				<?php
+				/**
+				 * Hook: repo_woo_single_product_title.
+				 *
+				 * @hooked woocommerce_template_single_title
+				 */
+				do_action( 'repo_woo_single_product_title' );
+				?>
+				
 				<p class="mb-3">
 					<span class="item_price">$200.00</span>
 					<del class="mx-2 font-weight-light">$280.00</del>
+					<?php
+					/**
+					 * Hook: repo_woo_single_product_price.
+					 *
+					 * @hooked woocommerce_template_single_price
+					 */
+					do_action( 'repo_woo_single_product_price' );
+					?>
 					<label>Free delivery</label>
 				</p>
 				<div class="single-infoagile">
@@ -100,6 +133,15 @@
 						<i class="fas fa-retweet mr-3"></i>Net banking & Credit/ Debit/ ATM card
 					</p>
 				</div>
+				<?php
+				/**
+				 * Hook: repo_woo_single_product_description.
+				 *
+				 * @hooked woocommerce_upsell_display
+				 */
+				do_action( 'repo_woo_single_product_description' );
+				?>
+				
 				<div class="occasion-cart">
 					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 						<form action="#" method="post">
@@ -118,6 +160,14 @@
 						</form>
 					</div>
 				</div>
+				<?php
+				/**
+				 * Hook: repo_woo_single_product_add_to_cart.
+				 *
+				 * @hooked woocommerce_template_single_add_to_cart
+				 */
+				do_action( 'repo_woo_single_product_add_to_cart' );
+				?>
 			</div>
 		</div>
 	</div>
