@@ -35,6 +35,12 @@ add_action('repo_woo_single_product_description','woocommerce_upsell_display');
 add_action('repo_woo_single_product_add_to_cart','woocommerce_template_single_add_to_cart');
 
 /**
+* Product detail Filter
+*/
+add_filter('woocommerce_single_product_image_thumbnail_html','repo_add_li_tag');
+//add_filter('woocommerce_gallery_thumbnail_size','repo_gallery_thumbnail_size');
+
+/**
 * Functions Hook
 */
 function woocommerce_get_sidebar(){
@@ -67,4 +73,10 @@ function repo_filter_woocommerce_breadcrumb_defaults($arr){
 		'after'       => '</li>',
 		'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
 	);
+}
+
+function repo_add_li_tag($html){
+	$html = str_replace('<div','<li',$html);
+	$html = str_replace('</div>','</li>',$html);
+	return $html;
 }
