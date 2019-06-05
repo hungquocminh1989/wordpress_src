@@ -79,7 +79,7 @@ if ( post_password_required() ) {
 					<label>Free delivery</label>
 				</p>
 				<div class="single-infoagile">
-					<ul>
+					<!--<ul>
 						<li class="mb-3">
 							Cash on Delivery Eligible.
 						</li>
@@ -92,41 +92,26 @@ if ( post_password_required() ) {
 						<li class="mb-3">
 							Bank OfferExtra 5% off* with Axis Bank Buzz Credit CardT&C
 						</li>
-					</ul>
+					</ul>-->
+					<?php
+					/**
+					 * Hook: repo_woo_single_product_short_description.
+					 *
+					 * @hooked repo_woo_single_product_short_description
+					 */
+					do_action( 'repo_woo_single_product_short_description' );
+					?>
 				</div>
 				<div class="product-single-w3l">
-					<p class="my-3">
-						<i class="far fa-hand-point-right mr-2"></i>
-						<label>1 Year</label>Manufacturer Warranty</p>
-					<ul>
-						<li class="mb-1">
-							3 GB RAM | 16 GB ROM | Expandable Upto 256 GB
-						</li>
-						<li class="mb-1">
-							5.5 inch Full HD Display
-						</li>
-						<li class="mb-1">
-							13MP Rear Camera | 8MP Front Camera
-						</li>
-						<li class="mb-1">
-							3300 mAh Battery
-						</li>
-						<li class="mb-1">
-							Exynos 7870 Octa Core 1.6GHz Processor
-						</li>
-					</ul>
-					<p class="my-sm-4 my-3">
-						<i class="fas fa-retweet mr-3"></i>Net banking & Credit/ Debit/ ATM card
-					</p>
+					<?php
+					/**
+					 * Hook: repo_woo_single_product_description.
+					 *
+					 * @hooked woocommerce_upsell_display
+					 */
+					do_action( 'repo_woo_single_product_description' );
+					?>
 				</div>
-				<?php
-				/**
-				 * Hook: repo_woo_single_product_description.
-				 *
-				 * @hooked woocommerce_upsell_display
-				 */
-				do_action( 'repo_woo_single_product_description' );
-				?>
 				
 				<div class="occasion-cart">
 					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
