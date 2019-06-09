@@ -464,15 +464,15 @@ h3.tittle-w3l span {
     outline: none;
 }
 
-/*.snipcart-details input.button*/
-.snipcart-details a.button {
+.single_add_to_cart_button,
+.snipcart-details a {
     font-size: 13px;
     color: #fff;
     background: #0879c9;
     text-decoration: none;
     border: none;
     border-radius: 0;
-    width: 100%;
+    /*width: 100%;*/
     text-transform: uppercase;
     padding: 13px;
     outline: none;
@@ -488,7 +488,8 @@ h3.tittle-w3l span {
     -ms-transition: 0.5s all;
 }
 
-.snipcart-details input.button:hover {
+.single_add_to_cart_button:hover,
+.snipcart-details a:hover {
     background: #000;
 }
 

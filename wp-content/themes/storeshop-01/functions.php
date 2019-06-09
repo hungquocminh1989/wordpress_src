@@ -13,3 +13,6 @@ locate_template('/core/init.php', TRUE);
 | START HERE
 |-------------------------------------------------------------------------- 
 */
+
+//Disable classic editor
+add_filter( 'use_block_editor_for_post', '__return_false' );

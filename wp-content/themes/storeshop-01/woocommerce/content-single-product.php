@@ -114,31 +114,16 @@ if ( post_password_required() ) {
 				</div>
 				
 				<div class="occasion-cart">
-					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-						<form action="#" method="post">
-							<fieldset>
-								<input type="hidden" name="cmd" value="_cart" />
-								<input type="hidden" name="add" value="1" />
-								<input type="hidden" name="business" value=" " />
-								<input type="hidden" name="item_name" value="Samsung Galaxy J7 Prime" />
-								<input type="hidden" name="amount" value="200.00" />
-								<input type="hidden" name="discount_amount" value="1.00" />
-								<input type="hidden" name="currency_code" value="USD" />
-								<input type="hidden" name="return" value=" " />
-								<input type="hidden" name="cancel_return" value=" " />
-								<input type="submit" name="submit" value="Add to cart" class="button" />
-							</fieldset>
-						</form>
-					</div>
+					<?php
+					/**
+					 * Hook: repo_woo_single_product_add_to_cart.
+					 *
+					 * @hooked woocommerce_template_single_add_to_cart
+					 */
+					do_action( 'repo_woo_single_product_add_to_cart' );
+					?>
 				</div>
-				<?php
-				/**
-				 * Hook: repo_woo_single_product_add_to_cart.
-				 *
-				 * @hooked woocommerce_template_single_add_to_cart
-				 */
-				do_action( 'repo_woo_single_product_add_to_cart' );
-				?>
+				
 			</div>
 		</div>
 	</div>

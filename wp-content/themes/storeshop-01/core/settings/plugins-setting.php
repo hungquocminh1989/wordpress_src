@@ -69,6 +69,11 @@ function repoLoadPluginFromStore() {
 			'slug' => 'regenerate-thumbnails',
 			'required' => TRUE,
 		],
+		[
+			'name' => 'Simply Show Hooks',
+			'slug' => 'simply-show-hooks',
+			'required' => TRUE,
+		],
 	];
 
 	// Thiet lap TGM

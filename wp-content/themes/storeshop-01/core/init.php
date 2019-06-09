@@ -17,6 +17,13 @@ locate_template('/core/functions.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------
+| WOOCOMMERCE OVERIDE FUNCTIONS
+|-------------------------------------------------------------------------- 
+*/
+locate_template('/core/wc-functions.php', TRUE);
+
+/*
+|--------------------------------------------------------------------------
 | LOAD CLASSES
 |-------------------------------------------------------------------------- 
 */
@@ -50,6 +57,7 @@ locate_template('/core/settings/taxonomy-setting.php', TRUE);
 locate_template('/core/settings/shortcode-setting.php', TRUE);
 locate_template('/core/settings/wc-product-setting.php', TRUE);
 locate_template('/core/settings/wc-product-detail-setting.php', TRUE);
+locate_template('/core/settings/wc-checkout-setting.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------

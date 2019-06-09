@@ -28,9 +28,25 @@ get_template_part('inc/content/intro-section');
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-do_action( 'woocommerce_before_main_content' );
+//do_action( 'woocommerce_before_main_content' );
 
 ?>
+
+<div class="services-breadcrumb">
+	<div class="agile_inner_breadcrumb">
+		<div class="container">
+			<?php
+			/**
+			 * Hook: repo_woo_single_product_breadcrumb.
+			 *
+			 * @hooked woocommerce_breadcrumb
+			 */
+			do_action( 'repo_woo_single_product_breadcrumb' );
+			?>
+		</div>
+	</div>
+</div>
+
 <header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
