@@ -55,9 +55,9 @@ locate_template('/core/settings/admin-setting.php', TRUE);
 locate_template('/core/settings/api-setting.php', TRUE);
 locate_template('/core/settings/taxonomy-setting.php', TRUE);
 locate_template('/core/settings/shortcode-setting.php', TRUE);
-locate_template('/core/settings/wc-product-setting.php', TRUE);
-locate_template('/core/settings/wc-product-detail-setting.php', TRUE);
-locate_template('/core/settings/wc-checkout-setting.php', TRUE);
+locate_template('/core/settings/wc/wc-product-setting.php', TRUE);
+locate_template('/core/settings/wc/wc-product-detail-setting.php', TRUE);
+locate_template('/core/settings/wc/wc-checkout-setting.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------

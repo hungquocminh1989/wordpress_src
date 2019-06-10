@@ -18,7 +18,24 @@ function repoSetupTheme(){
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support('automatic-feed-links');
-	add_theme_support('woocommerce');
+	
+	//WooCommerce
+	add_theme_support( 'woocommerce', array(
+        'thumbnail_image_width' => 150,
+        'single_image_width'    => 300,
+
+        'product_grid'          => array(
+            'default_rows'    => 3,
+            'min_rows'        => 2,
+            'max_rows'        => 8,
+            'default_columns' => 4,
+            'min_columns'     => 2,
+            'max_columns'     => 5,
+        ),
+    ) );
+    /*add_theme_support( 'wc-product-gallery-zoom' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );*/
 
 	//load_theme_textdomain('mmen', TEMPLATE_DIRECTORY . '/resources/lang');
 }
