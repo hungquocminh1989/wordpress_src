@@ -1,9 +1,7 @@
 <?php
 /*
 |--------------------------------------------------------------------------
-| WOOCOMMERCE OVERIDE FUNCTIONS
+| WOOCOMMERCE TEMPLATE FUNCTIONS
 |-------------------------------------------------------------------------- 
 */
-
 defined( 'ABSPATH' ) || exit;
-if (is_admin()) return;
