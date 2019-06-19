@@ -10,18 +10,18 @@ defined( 'ABSPATH' ) || exit;
 * Hooks
 */
 add_action('woocommerce_sidebar','woocommerce_get_sidebar');
-add_action('repostore_right_sidebar','get_product_right_sidebar');
-add_action('repostore_loop_product_thumbnail','woocommerce_template_loop_product_thumbnail');
-add_action('repostore_loop_product_title','get_loop_product_title');
-add_action('repostore_loop_product_price','woocommerce_template_loop_price');
-add_action('repostore_loop_product_add_to_cart','woocommerce_template_loop_add_to_cart');
-add_action('repostore_single_product_breadcrumb','woocommerce_breadcrumb');
-add_action('repostore_single_product_images','woocommerce_show_product_images');
-add_action('repostore_single_product_title','woocommerce_template_single_title');
-add_action('repostore_single_product_price','woocommerce_template_single_price');
-add_action('repostore_single_product_description','get_single_product_description');
-add_action('repostore_single_product_add_to_cart','woocommerce_template_single_add_to_cart');
-add_action('repostore_single_product_short_description','get_single_product_short_description');
+add_action('storeshop01_right_sidebar','get_product_right_sidebar');
+add_action('storeshop01_loop_product_thumbnail','woocommerce_template_loop_product_thumbnail');
+add_action('storeshop01_loop_product_title','get_loop_product_title');
+add_action('storeshop01_loop_product_price','woocommerce_template_loop_price');
+add_action('storeshop01_loop_product_add_to_cart','woocommerce_template_loop_add_to_cart');
+add_action('storeshop01_single_product_breadcrumb','woocommerce_breadcrumb');
+add_action('storeshop01_single_product_images','woocommerce_show_product_images');
+add_action('storeshop01_single_product_title','woocommerce_template_single_title');
+add_action('storeshop01_single_product_price','woocommerce_template_single_price');
+add_action('storeshop01_single_product_description','get_single_product_description');
+add_action('storeshop01_single_product_add_to_cart','woocommerce_template_single_add_to_cart');
+add_action('storeshop01_single_product_short_description','get_single_product_short_description');
 
 /**
 * Filters

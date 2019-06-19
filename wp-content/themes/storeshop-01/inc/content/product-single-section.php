@@ -18,11 +18,11 @@
 			</ul>
 			<?php
 			/**
-			 * Hook: repostore_single_product_breadcrumb.
+			 * Hook: storeshop01_single_product_breadcrumb.
 			 *
 			 * @hooked woocommerce_breadcrumb
 			 */
-			do_action( 'repostore_single_product_breadcrumb' );
+			do_action( 'storeshop01_single_product_breadcrumb' );
 			?>
 		</div>
 	</div>
@@ -61,22 +61,22 @@
 			</div>
 			<?php
 			/**
-			 * Hook: repostore_single_product_images.
+			 * Hook: storeshop01_single_product_images.
 			 *
 			 * @hooked woocommerce_show_product_images
 			 */
-			do_action( 'repostore_single_product_images' );
+			do_action( 'storeshop01_single_product_images' );
 			?>
 
 			<div class="col-lg-7 single-right-left simpleCart_shelfItem">
 				<h3 class="mb-3">Samsung Galaxy J7 Prime (Gold, 16 GB) (3 GB RAM)</h3>
 				<?php
 				/**
-				 * Hook: repostore_single_product_title.
+				 * Hook: storeshop01_single_product_title.
 				 *
 				 * @hooked woocommerce_template_single_title
 				 */
-				do_action( 'repostore_single_product_title' );
+				do_action( 'storeshop01_single_product_title' );
 				?>
 				
 				<p class="mb-3">
@@ -84,11 +84,11 @@
 					<del class="mx-2 font-weight-light">$280.00</del>
 					<?php
 					/**
-					 * Hook: repostore_single_product_price.
+					 * Hook: storeshop01_single_product_price.
 					 *
 					 * @hooked woocommerce_template_single_price
 					 */
-					do_action( 'repostore_single_product_price' );
+					do_action( 'storeshop01_single_product_price' );
 					?>
 					<label>Free delivery</label>
 				</p>
@@ -135,11 +135,11 @@
 				</div>
 				<?php
 				/**
-				 * Hook: repostore_single_product_description.
+				 * Hook: storeshop01_single_product_description.
 				 *
 				 * @hooked woocommerce_upsell_display
 				 */
-				do_action( 'repostore_single_product_description' );
+				do_action( 'storeshop01_single_product_description' );
 				?>
 				
 				<div class="occasion-cart">
@@ -162,11 +162,11 @@
 				</div>
 				<?php
 				/**
-				 * Hook: repostore_single_product_add_to_cart.
+				 * Hook: storeshop01_single_product_add_to_cart.
 				 *
 				 * @hooked woocommerce_template_single_add_to_cart
 				 */
-				do_action( 'repostore_single_product_add_to_cart' );
+				do_action( 'storeshop01_single_product_add_to_cart' );
 				?>
 			</div>
 		</div>
