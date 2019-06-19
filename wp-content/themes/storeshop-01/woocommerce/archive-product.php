@@ -37,11 +37,11 @@ get_template_part('inc/content/intro-section');
 		<div class="container">
 			<?php
 			/**
-			 * Hook: repo_woo_single_product_breadcrumb.
+			 * Hook: repostore_single_product_breadcrumb.
 			 *
 			 * @hooked woocommerce_breadcrumb
 			 */
-			do_action( 'repo_woo_single_product_breadcrumb' );
+			do_action( 'repostore_single_product_breadcrumb' );
 			?>
 		</div>
 	</div>
@@ -128,9 +128,9 @@ get_template_part('inc/content/intro-section');
 			
 			<?php
 			/**
-			* repo_right_sidebar
+			* repostore_right_sidebar
 			*/
-			do_action( 'repo_right_sidebar' );
+			do_action( 'repostore_right_sidebar' );
 			
 			/**
 			 * Hook: woocommerce_after_main_content.

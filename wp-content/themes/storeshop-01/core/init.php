@@ -55,9 +55,8 @@ locate_template('/core/settings/wp/wp-shortcode.php', TRUE);
 |-------------------------------------------------------------------------- 
 */
 locate_template('/core/settings/wc/wc-functions.php', TRUE);
-locate_template('/core/settings/wc/wc-archive-product.php', TRUE);
-locate_template('/core/settings/wc/wc-single-product.php', TRUE);
-locate_template('/core/settings/wc/wc-checkout.php', TRUE);
+locate_template('/core/settings/wc/wc-template-hooks.php', TRUE);
+locate_template('/core/settings/wc/wc-template-functions.php', TRUE);
 
 /*
 |--------------------------------------------------------------------------

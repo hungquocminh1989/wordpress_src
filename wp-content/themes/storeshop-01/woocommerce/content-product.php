@@ -30,11 +30,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		<div class="men-thumb-item text-center">
 			<?php
 			/**
-			 * Hook: repo_woo_loop_product_thumbnail.
+			 * Hook: repostore_loop_product_thumbnail.
 			 *
 			 * @hooked woocommerce_template_loop_product_thumbnail - 10
 			 */
-			do_action( 'repo_woo_loop_product_thumbnail' );
+			do_action( 'repostore_loop_product_thumbnail' );
 			?>
 			<!--<div class="men-cart-pro">
 				<div class="inner-men-cart-pro">
@@ -48,20 +48,20 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			</h4>-->
 			<?php
 			/**
-			 * Hook: repo_woo_loop_product_title.
+			 * Hook: repostore_loop_product_title.
 			 *
-			 * @hooked repo_woo_loop_product_title
+			 * @hooked repostore_loop_product_title
 			 */
-			do_action( 'repo_woo_loop_product_title' );
+			do_action( 'repostore_loop_product_title' );
 			?>
 			
 			<?php
 			/**
-			 * Hook: repo_woo_loop_product_price.
+			 * Hook: repostore_loop_product_price.
 			 *
 			 * @hooked woocommerce_template_loop_price - 10
 			 */
-			do_action( 'repo_woo_loop_product_price' );
+			do_action( 'repostore_loop_product_price' );
 			?>
 			<!--<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 				<form action="#" method="post">
@@ -82,11 +82,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 			<?php
 			/**
-			 * Hook: repo_woo_loop_product_add_to_cart.
+			 * Hook: repostore_loop_product_add_to_cart.
 			 *
 			 * @hooked woocommerce_template_loop_add_to_cart - 10
 			 */
-			do_action( 'repo_woo_loop_product_add_to_cart' );
+			do_action( 'repostore_loop_product_add_to_cart' );
 			?>
 			</div>
 		</div>

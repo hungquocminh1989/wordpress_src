@@ -32,11 +32,11 @@ get_header( 'shop' ); ?>
 			<div class="container">
 				<?php
 				/**
-				 * Hook: repo_woo_single_product_breadcrumb.
+				 * Hook: repostore_single_product_breadcrumb.
 				 *
 				 * @hooked woocommerce_breadcrumb
 				 */
-				do_action( 'repo_woo_single_product_breadcrumb' );
+				do_action( 'repostore_single_product_breadcrumb' );
 				?>
 			</div>
 		</div>

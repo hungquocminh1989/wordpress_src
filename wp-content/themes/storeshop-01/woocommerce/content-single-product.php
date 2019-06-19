@@ -45,11 +45,11 @@ if ( post_password_required() ) {
 				<div class="grid images_3_of_2">
 					<?php
 					/**
-					 * Hook: repo_woo_single_product_images.
+					 * Hook: repostore_single_product_images.
 					 *
 					 * @hooked woocommerce_show_product_images
 					 */
-					do_action( 'repo_woo_single_product_images' );
+					do_action( 'repostore_single_product_images' );
 					?>
 				</div>
 			</div>
@@ -58,11 +58,11 @@ if ( post_password_required() ) {
 				<!--<h3 class="mb-3">Samsung Galaxy J7 Prime (Gold, 16 GB) (3 GB RAM)</h3>-->
 				<?php
 				/**
-				 * Hook: repo_woo_single_product_title.
+				 * Hook: repostore_single_product_title.
 				 *
 				 * @hooked woocommerce_template_single_title
 				 */
-				do_action( 'repo_woo_single_product_title' );
+				do_action( 'repostore_single_product_title' );
 				?>
 				
 				<p class="mb-3">
@@ -70,11 +70,11 @@ if ( post_password_required() ) {
 					<del class="mx-2 font-weight-light">$280.00</del>-->
 					<?php
 					/**
-					 * Hook: repo_woo_single_product_price.
+					 * Hook: repostore_single_product_price.
 					 *
 					 * @hooked woocommerce_template_single_price
 					 */
-					do_action( 'repo_woo_single_product_price' );
+					do_action( 'repostore_single_product_price' );
 					?>
 					<label>Free delivery</label>
 				</p>
@@ -95,32 +95,32 @@ if ( post_password_required() ) {
 					</ul>-->
 					<?php
 					/**
-					 * Hook: repo_woo_single_product_short_description.
+					 * Hook: repostore_single_product_short_description.
 					 *
-					 * @hooked repo_woo_single_product_short_description
+					 * @hooked repostore_single_product_short_description
 					 */
-					do_action( 'repo_woo_single_product_short_description' );
+					do_action( 'repostore_single_product_short_description' );
 					?>
 				</div>
 				<div class="product-single-w3l">
 					<?php
 					/**
-					 * Hook: repo_woo_single_product_description.
+					 * Hook: repostore_single_product_description.
 					 *
 					 * @hooked woocommerce_upsell_display
 					 */
-					do_action( 'repo_woo_single_product_description' );
+					do_action( 'repostore_single_product_description' );
 					?>
 				</div>
 				
 				<div class="occasion-cart">
 					<?php
 					/**
-					 * Hook: repo_woo_single_product_add_to_cart.
+					 * Hook: repostore_single_product_add_to_cart.
 					 *
 					 * @hooked woocommerce_template_single_add_to_cart
 					 */
-					do_action( 'repo_woo_single_product_add_to_cart' );
+					do_action( 'repostore_single_product_add_to_cart' );
 					?>
 				</div>
 				
