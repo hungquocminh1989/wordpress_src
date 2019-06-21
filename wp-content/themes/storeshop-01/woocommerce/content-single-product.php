@@ -31,103 +31,46 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
-<!-- Single Page -->
-<div class="banner-bootom-w3-agileits py-5">
-	<div class="container py-xl-4 py-lg-2">
-		<!-- tittle heading -->
-		<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
-			<span>S</span>ingle
-			<span>P</span>age</h3>
-		<!-- //tittle heading -->
-		<div class="row">
-			<div class="col-lg-5 col-md-8 single-right-left ">
-				<div class="grid images_3_of_2">
-					<?php
-					/**
-					 * Hook: storeshop01_single_product_images.
-					 *
-					 * @hooked woocommerce_show_product_images
-					 */
-					do_action( 'storeshop01_single_product_images' );
-					?>
-				</div>
-			</div>
+	<?php
+	/**
+	 * Hook: woocommerce_before_single_product_summary.
+	 *
+	 * @hooked woocommerce_show_product_sale_flash - 10
+	 * @hooked woocommerce_show_product_images - 20
+	 */
+	do_action( 'woocommerce_before_single_product_summary' );
+	?>
 
-			<div class="col-lg-7 single-right-left simpleCart_shelfItem">
-				<!--<h3 class="mb-3">Samsung Galaxy J7 Prime (Gold, 16 GB) (3 GB RAM)</h3>-->
-				<?php
-				/**
-				 * Hook: storeshop01_single_product_title.
-				 *
-				 * @hooked woocommerce_template_single_title
-				 */
-				do_action( 'storeshop01_single_product_title' );
-				?>
-				
-				<p class="mb-3">
-					<!--<span class="item_price">$200.00</span>
-					<del class="mx-2 font-weight-light">$280.00</del>-->
-					<?php
-					/**
-					 * Hook: storeshop01_single_product_price.
-					 *
-					 * @hooked woocommerce_template_single_price
-					 */
-					do_action( 'storeshop01_single_product_price' );
-					?>
-					<label>Free delivery</label>
-				</p>
-				<div class="single-infoagile">
-					<!--<ul>
-						<li class="mb-3">
-							Cash on Delivery Eligible.
-						</li>
-						<li class="mb-3">
-							Shipping Speed to Delivery.
-						</li>
-						<li class="mb-3">
-							EMIs from $655/month.
-						</li>
-						<li class="mb-3">
-							Bank OfferExtra 5% off* with Axis Bank Buzz Credit CardT&C
-						</li>
-					</ul>-->
-					<?php
-					/**
-					 * Hook: storeshop01_single_product_short_description.
-					 *
-					 * @hooked storeshop01_single_product_short_description
-					 */
-					do_action( 'storeshop01_single_product_short_description' );
-					?>
-				</div>
-				<div class="product-single-w3l">
-					<?php
-					/**
-					 * Hook: storeshop01_single_product_description.
-					 *
-					 * @hooked woocommerce_upsell_display
-					 */
-					do_action( 'storeshop01_single_product_description' );
-					?>
-				</div>
-				
-				<div class="occasion-cart">
-					<?php
-					/**
-					 * Hook: storeshop01_single_product_add_to_cart.
-					 *
-					 * @hooked woocommerce_template_single_add_to_cart
-					 */
-					do_action( 'storeshop01_single_product_add_to_cart' );
-					?>
-				</div>
-				
-			</div>
-		</div>
+	<div class="summary entry-summary">
+		<?php
+		/**
+		 * Hook: woocommerce_single_product_summary.
+		 *
+		 * @hooked woocommerce_template_single_title - 5
+		 * @hooked woocommerce_template_single_rating - 10
+		 * @hooked woocommerce_template_single_price - 10
+		 * @hooked woocommerce_template_single_excerpt - 20
+		 * @hooked woocommerce_template_single_add_to_cart - 30
+		 * @hooked woocommerce_template_single_meta - 40
+		 * @hooked woocommerce_template_single_sharing - 50
+		 * @hooked WC_Structured_Data::generate_product_data() - 60
+		 */
+		do_action( 'woocommerce_single_product_summary' );
+		?>
 	</div>
+
+	<?php
+	/**
+	 * Hook: woocommerce_after_single_product_summary.
+	 *
+	 * @hooked woocommerce_output_product_data_tabs - 10
+	 * @hooked woocommerce_upsell_display - 15
+	 * @hooked woocommerce_output_related_products - 20
+	 */
+	do_action( 'woocommerce_after_single_product_summary' );
+	?>
 </div>
-<!-- //Single Page -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

@@ -19,8 +19,6 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
-get_template_part('inc/content/intro-section');
-
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -28,25 +26,9 @@ get_template_part('inc/content/intro-section');
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-//do_action( 'woocommerce_before_main_content' );
+do_action( 'woocommerce_before_main_content' );
 
 ?>
-
-<div class="services-breadcrumb">
-	<div class="agile_inner_breadcrumb">
-		<div class="container">
-			<?php
-			/**
-			 * Hook: storeshop01_single_product_breadcrumb.
-			 *
-			 * @hooked woocommerce_breadcrumb
-			 */
-			do_action( 'storeshop01_single_product_breadcrumb' );
-			?>
-		</div>
-	</div>
-</div>
-
 <header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
@@ -62,93 +44,64 @@ get_template_part('inc/content/intro-section');
 	do_action( 'woocommerce_archive_description' );
 	?>
 </header>
-
-<!-- top Products -->
-<div class="ads-grid py-sm-5 py-4">
-	<div class="container py-xl-4 py-lg-2">
-		<!-- tittle heading -->
-		<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
-			<span>O</span>ur
-			<span>N</span>ew
-			<span>P</span>roducts</h3>
-		<!-- //tittle heading -->
-		<div class="row">
-			<!-- product left -->
-			<div class="agileinfo-ads-display col-lg-9">
-				<div class="wrapper">
-					<?php
-					if ( woocommerce_product_loop() ) {
-
-						/**
-						 * Hook: woocommerce_before_shop_loop.
-						 *
-						 * @hooked woocommerce_output_all_notices - 10
-						 * @hooked woocommerce_result_count - 20
-						 * @hooked woocommerce_catalog_ordering - 30
-						 */
-						do_action( 'woocommerce_before_shop_loop' );
-
-						woocommerce_product_loop_start();
-
-						if ( wc_get_loop_prop( 'total' ) ) {
-							while ( have_posts() ) {
-								the_post();
-
-								/**
-								 * Hook: woocommerce_shop_loop.
-								 *
-								 * @hooked WC_Structured_Data::generate_product_data() - 10
-								 */
-								do_action( 'woocommerce_shop_loop' );
-
-								wc_get_template_part( 'content', 'product' );
-							}
-						}
-
-						woocommerce_product_loop_end();
-
-						/**
-						 * Hook: woocommerce_after_shop_loop.
-						 *
-						 * @hooked woocommerce_pagination - 10
-						 */
-						do_action( 'woocommerce_after_shop_loop' );
-					} else {
-						/**
-						 * Hook: woocommerce_no_products_found.
-						 *
-						 * @hooked wc_no_products_found - 10
-						 */
-						do_action( 'woocommerce_no_products_found' );
-					}
-					?>
-				</div>
-			</div>
-			<!-- //product left -->
-			
-			<?php
-			/**
-			* storeshop01_right_sidebar
-			*/
-			do_action( 'storeshop01_right_sidebar' );
-			
-			/**
-			 * Hook: woocommerce_after_main_content.
-			 *
-			 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-			 */
-			do_action( 'woocommerce_after_main_content' );
-			
-			/**
-			 * Hook: woocommerce_sidebar.
-			 *
-			 * @hooked woocommerce_get_sidebar - 10
-			 */
-			do_action( 'woocommerce_sidebar' );
-			?>
-		</div>
-	</div>
-</div>
-
 <?php
+if ( woocommerce_product_loop() ) {
+
+	/**
+	 * Hook: woocommerce_before_shop_loop.
+	 *
+	 * @hooked woocommerce_output_all_notices - 10
+	 * @hooked woocommerce_result_count - 20
+	 * @hooked woocommerce_catalog_ordering - 30
+	 */
+	do_action( 'woocommerce_before_shop_loop' );
+
+	woocommerce_product_loop_start();
+
+	if ( wc_get_loop_prop( 'total' ) ) {
+		while ( have_posts() ) {
+			the_post();
+
+			/**
+			 * Hook: woocommerce_shop_loop.
+			 *
+			 * @hooked WC_Structured_Data::generate_product_data() - 10
+			 */
+			do_action( 'woocommerce_shop_loop' );
+
+			wc_get_template_part( 'content', 'product' );
+		}
+	}
+
+	woocommerce_product_loop_end();
+
+	/**
+	 * Hook: woocommerce_after_shop_loop.
+	 *
+	 * @hooked woocommerce_pagination - 10
+	 */
+	do_action( 'woocommerce_after_shop_loop' );
+} else {
+	/**
+	 * Hook: woocommerce_no_products_found.
+	 *
+	 * @hooked wc_no_products_found - 10
+	 */
+	do_action( 'woocommerce_no_products_found' );
+}
+
+/**
+ * Hook: woocommerce_after_main_content.
+ *
+ * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+ */
+do_action( 'woocommerce_after_main_content' );
+
+/**
+ * Hook: woocommerce_sidebar.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+do_action( 'woocommerce_sidebar' );
+
 get_footer( 'shop' );

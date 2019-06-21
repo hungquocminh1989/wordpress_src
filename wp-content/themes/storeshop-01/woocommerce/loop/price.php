@@ -23,7 +23,5 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<div class="info-product-price my-2">
-		<span class="item_price"><?php echo $price_html; ?></span>
-	</div>
+	<span class="price"><?php echo $price_html; ?></span>
 <?php endif; ?>

@@ -22,7 +22,7 @@
 			 *
 			 * @hooked woocommerce_breadcrumb
 			 */
-			do_action( 'storeshop01_single_product_breadcrumb' );
+			do_action( 'storeshop01_breadcrumb' );
 			?>
 		</div>
 	</div>

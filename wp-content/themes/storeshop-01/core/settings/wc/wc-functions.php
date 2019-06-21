@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 if ( ! function_exists( 'storeshop01_archive_content' ) ) {
 
 	function storeshop01_archive_content() {
-		apply_filters( 'storeshop01_show_page_title');
+		apply_filters( 'storeshop01_show_page_title', '');
 		do_action( 'storeshop01_archive_description' );
 		if ( woocommerce_product_loop() ) 
 		{
