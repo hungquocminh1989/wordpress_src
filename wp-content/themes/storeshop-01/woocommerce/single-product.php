@@ -21,39 +21,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
+<!-- banner-2 -->
+<div class="page-head_agile_info_w3l">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+</div>
+<!-- //banner-2 -->
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+<div class="services-breadcrumb">
+	<div class="agile_inner_breadcrumb">
+		<div class="container">
+			<?php
+			/**
+			 * Hook: storeshop01_single_product_breadcrumb.
+			 *
+			 * @hooked woocommerce_breadcrumb
+			 */
+			do_action( 'storeshop01_breadcrumb' );
+			?>
+		</div>
+	</div>
+</div>
 
-		<?php endwhile; // end of the loop. ?>
+<?php storeshop01_single_content(); ?>
 
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
-	?>
-
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
+<?php
+/**
+ * woocommerce_sidebar hook.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+do_action( 'woocommerce_sidebar' );
+?>
 
 <?php get_footer( 'shop' );
 

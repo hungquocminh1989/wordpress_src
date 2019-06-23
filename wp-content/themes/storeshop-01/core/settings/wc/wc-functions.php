@@ -9,12 +9,12 @@ defined( 'ABSPATH' ) || exit;
 if ( ! function_exists( 'storeshop01_archive_content' ) ) {
 
 	function storeshop01_archive_content() {
-		apply_filters( 'storeshop01_show_page_title', '');
+		echo apply_filters( 'storeshop01_show_page_title', '');
 		do_action( 'storeshop01_archive_description' );
 		if ( woocommerce_product_loop() ) 
 		{
 			do_action( 'storeshop01_before_shop_loop' );
-			woocommerce_product_loop_start();
+			//woocommerce_product_loop_start();
 			if( wc_get_loop_prop( 'total' ) )
 			{
 				while ( have_posts() ){
@@ -22,7 +22,7 @@ if ( ! function_exists( 'storeshop01_archive_content' ) ) {
 					wc_get_template_part( 'content', 'product' );
 				}
 			}
-			woocommerce_product_loop_end();
+			//woocommerce_product_loop_end();
 			do_action( 'storeshop01_after_shop_loop' );
 		}
 		else{
